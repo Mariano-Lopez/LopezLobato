@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/estiloLobato.css">
+    <!--Link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!--Link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Contacto | Pizzeria Lobato</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Nombre del negocio y logo-->
+        
+        <div class="divFlexlogo">
+            <h1>Pizzeria Lobato</h1>
+            <a class="nav__logo" href="../index.html"><img src="../img/Logos/logo.jpg" alt="logo" class="img__Logo"></a>
+        </div>
+        
+        <!--Menu de navegacion-->
+        <nav>
+            <ul class="nav__list">
+                <!--Secciones de la pagina-->
+                <li class="nav__item"><a class="nav__link" href="../pages/contacto.html"> Contacto</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/productos.html"> Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/tupedido.html">Tu pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Nombre de la seccion-->
+        <h2>¡Contactanos!</h2>
+        <div>
+            <p class="estParrafo">Si queres saber nuestras proximas ofertas, novedades o simplemente queres dejar un comentario, rellena los campos de abajo y escribinos.</p>
+        </div>
+
+        <h3 class="secTitulo sangriaA">¡Dejanos tus datos!</h2>
+
+        <div class="sangriaAB">
+            <!--Colocar un asterisco en los campos obligatorios y especificarlo para el usuario-->
+            <!--Quiero colocar un formulario donde se dejen los datos basicos nombre, apellido...etc.-->
+            <form>
+                <fieldset class="gridForm">
+                    <legend class="centComent sangriaB">Completa con tus datos</legend>
+
+                    <div class="nombre flexForm">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    </div>
+
+                    <div class="apellido flexForm">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                    </div>
+
+                    <div class="telefono flexForm">
+                        <label for="tel">Telefono</label>
+                        <input type="tel" name="tel" placeholder="Ingrese su telefono">
+                    </div>
+
+                    <div class="email flexForm">
+                        <label for="email">Correo Elctronico</label>
+                        <input type="text" name="email" required placeholder="Ingrese su e-mail">
+                    </div>
+
+                    <div class="edad flexForm">
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" required placeholder="Ingrese su edad">
+                    </div>
+
+                    <div class="mayor flexForm">
+                        <span>*Es obligatorio ser mayor de 18.</span>
+                    </div>
+
+
+
+                    <div class="direccion flexForm">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" name="direc" placeholder="Ingrese su direccion">
+                    </div>
+
+                    <div class="comentario flexForm centComent">
+                        <label for="coment">Deja tu comentario</label>
+                        <textarea name="coment" id=""></textarea>
+                    </div>
+                    
+                    
+                    <div class="boton">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                    <div class="borrar sangriaB">
+                        <input type="reset" value="Vaciar campos">
+                    </div>
+
+
+
+                </fieldset>    
+            </form>
+        </div>
+
+        <div>
+            <!--Colocar un boton para enviar los datos-->
+        </div>
+
+
+
+    </main>
+
+    <!-- Pie de pagina-->
+    <footer class="footerLinea">
+
+        <div class="footerFlex">
+            <!--Mapa del local-->
+            <div>
+                <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
+                <div class="footerMap tamMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </div>
+            
+            <div>
+                <h3 class="titFooter sangriaAB">Seguinos en nuestras Redes</h3>
+                <div class="footerLogo footerFlexLogo">
+                    <!--Redes Sociales-->
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
+                        <span>Instagram</span>
+                    </div>
+                    
+                
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
+                        <span>Facebook</span>
+                    </div>
+                    
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
+                        <span>Twitter</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <div class="navFooter">
+                <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
+                <nav>
+                    <ul class="footerListnav gridNavfooter">
+                        <!--Secciones de la pagina-->
+                        <li class="contac"><a class="footerNav" href="../pages/contacto.html"> Contacto</a></li>
+                        <li class="prod"><a class="footerNav" href="../pages/productos.html"> Productos</a></li>
+                        <li class="sobnos"><a class="footerNav" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li class="tuped"><a class="footerNav" href="../pages/tupedido.html"> Tu pedido</a></li>
+                        <li class="irA"><a href="#arriba" class="irA">Ir al Inicio de pagina</a></li>
+                    </ul>
+                </nav>
+                <!--Ir al principio de la pagina-->
+                
+            </div>
+
+        </div>
+
+        <!--"Firma"-->
+        <div class="footerFirma">
+            <span>Hecho por Mariano Lopez 2021</span>
+        </div>
+
+    </footer>
+</body>
+</html>

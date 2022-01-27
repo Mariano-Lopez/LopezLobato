@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/estiloLobato.css">
+    <!--Link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!--Link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Satisfy&display=swap" rel="stylesheet">
+    <!--Titulo de la seccion-->
+    <title>Tu pedido | Pizzeria Lobato</title>
+</head>
+<body>
+    <header>
+
+        <!--Nombre del negocio y logo-->
+        
+        <div class="divFlexlogo">
+            <h1>Pizzeria Lobato</h1>
+            <a class="nav__logo" href="../index.html"><img src="../img/Logos/logo.jpg" alt="logo" class="img__Logo"></a>
+        </div>
+        
+        <!--Menu de navegacion-->
+        <nav>
+            <ul class="nav__list">
+                <!--Secciones de la pagina-->
+                <li class="nav__item"><a class="nav__link" href="../pages/contacto.html"> Contacto</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/productos.html"> Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="../pages/tupedido.html">Tu pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Titulo de la seccion
+        <h2 class="secTitulo">Hacé tu pedido</h2> Me parece que no hace falta este titulo-->
+
+        <!--Explicarle al usuario como hacer el pedido a la pagina-->
+        <div>
+            <p class="estParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, rem?</p>
+        </div>
+
+        <!--Me gustaria saber como hacer la interfaz para hacer el pedido, tenia pensado con un formulario que muestre los productos ordenados por categoria y al lado las cantidades-->
+
+
+        <d class="sangriaAB">
+            
+            <!--Como te habia comentado pabloe quiero hacer como un formulario o lista para que el cliente elija y haga su pedido por el momento se me ocurrio hacerlo con un formulario-->
+            <form>
+                <fieldset>
+                    <legend class="secTitulo">¡Realizá tu pedido!</legend>
+
+                    <!--Explicarle al usuario como hacer el pedido a la pagina-->
+                    <div>
+                        <p class="estParrafo sangriaB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, rem?</p>
+                    </div>
+
+                    <div>
+                        <label for="comida">Elija la comida</label>
+                        <select name="comida">
+                            <option value="">Seleccione una opción</option>
+                            <option value="Pizza1">Pizza1</option>
+                            <option value="Pizza2">Pizza2</option>
+                            <option value="Pizza3">Pizza3</option>
+                            <option value="Empanada1">Empanada1</option>
+                            <option value="Empanada2">Empanada2</option>
+                            <option value="Empanada3">Empanada3</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="bebida">Elija su bebida</label>
+                        <select name="bebida">
+                            <option value="">Seleccione una opción</option>
+                            <option value="Gaseosa1">Gaseosa1</option>
+                            <option value="Gaseosa2">Gaseosa2</option>
+                            <option value="Gaseosa3">Gaseosa3</option>
+                            <option value="Cerveza1">Cerveza1</option>
+                            <option value="Cerveza2">Cerveza2</option>
+                            <option value="Cerveza3">Cerveza3</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        
+                        <label for="recomen">Aclaraciones del pedido</label>
+                        <textarea name="Comentario" placeholder="Escribi los detalles del pedido"></textarea>
+
+                    </div>
+
+                    <div>
+                        <!--Que opcion uso para "agregar otro campo mas"-->
+                        <input type="reset" value="Resetear">
+                    </div>
+
+                    <div>
+                        <a href="" class="estPago">Elegir medio de pago</a>
+                    </div>
+
+                </fieldset>    
+            </form>
+
+            <form class="sangriaAB">
+                <fieldset>
+                    <legend class="secTitulo">Dejanos tus datos para informarte sobre el pedido</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" required placeholder="Correo electronico">
+                    </div>
+
+                    <div>
+                        <label for="direccion">Dirección</label>
+                        <input type="text" required placeholder="Direccion">
+                    </div>
+
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="text" required placeholder="Telefono">
+                    </div>
+                    
+                    
+
+                    <div>
+                        <!--Boton de enviar-->
+                        <input type="submit" value="Enviar pedido">
+                    </div>
+
+                </fieldset>
+
+            </form>
+    </main>
+
+    <!-- Pie de pagina-->
+    <footer class="footerLinea">
+
+        <div class="footerFlex">
+            <!--Mapa del local-->
+            <div>
+                <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
+                <div class="footerMap tamMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </div>
+            
+            <div>
+                <h3 class="titFooter sangriaAB">Seguinos en nuestras Redes</h3>
+                <div class="footerLogo footerFlexLogo">
+                    <!--Redes Sociales-->
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
+                        <span>Instagram</span>
+                    </div>
+                    
+                
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
+                        <span>Facebook</span>
+                    </div>
+                    
+                    <div class="footerFlexCol">
+                        <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
+                        <span>Twitter</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <div class="gridNavfooter">
+                <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
+                <nav>
+                    <ul class="footerListnav">
+                        <!--Secciones de la pagina-->
+                        <li><a class="footerNav cont" href="../pages/contacto.html"> Contacto</a></li>
+                        <li><a class="footerNav prod" href="../pages/productos.html"> Productos</a></li>
+                        <li><a class="footerNav sobnos" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="footerNav tuped" href="../pages/tupedido.html"> Tu pedido</a></li>
+                        
+                    </ul>
+                </nav>
+                <!--Ir al principio de la pagina-->
+                <a href="#arriba" class="ir">Ir al Inicio de pagina</a>
+            </div>
+
+        </div>
+
+        <!--"Firma"-->
+        <div class="footerFirma">
+            <span>Hecho por Mariano Lopez 2021</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>
