@@ -78,7 +78,7 @@
 
         <div class="footerFlex">
             <!--Mapa del local-->
-            <div>
+            <div class="iframe">
                 <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
                 <div class="footerMap tamMap">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -86,8 +86,8 @@
                 
             </div>
             
-            <div>
-                <h3 class="titFooter sangriaAB">Seguinos en nuestras Redes</h3>
+            <div class="red">
+                <h3 class="titFooter sangriaB">Seguinos en nuestras Redes</h3>
                 <div class="footerLogo footerFlexLogo">
                     <!--Redes Sociales-->
                     <div class="footerFlexCol">
@@ -109,31 +109,38 @@
                 </div>
             </div>
             
-
-            <div class="gridNavfooter">
+    
+            <div class="navFooter">
                 <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
                 <nav>
-                    <ul class="footerListnav">
+                    <ul class="footerListnav gridNavfooter">
                         <!--Secciones de la pagina-->
-                        <li><a class="footerNav cont" href="../pages/contacto.html"> Contacto</a></li>
-                        <li><a class="footerNav prod" href="../pages/productos.html"> Productos</a></li>
-                        <li><a class="footerNav sobnos" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a class="footerNav tuped" href="../pages/tupedido.html"> Tu pedido</a></li>
+                        <li class="contac"><a class="footerNav" href="../pages/contacto.html"> Contacto</a></li>
+                        <li class="prod"><a class="footerNav" href="../pages/productos.html"> Productos</a></li>
+                        <li class="sobnos"><a class="footerNav" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li class="tuped"><a class="footerNav" href="../pages/tupedido.html"> Tu pedido</a></li>
+                        <li class="irA"><a href="#arriba">Ir al Inicio de pagina</a></li>
                         
                     </ul>
                 </nav>
                 <!--Ir al principio de la pagina-->
-                <a href="#arriba" class="ir">Ir al Inicio de pagina</a>
+                
             </div>
-
+    
         </div>
-
+    
         <!--"Firma"-->
         <div class="footerFirma">
             <span>Hecho por Mariano Lopez 2021</span>
         </div>
-
+        <!--
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>-->
+    
     </footer>
+    <!--Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
