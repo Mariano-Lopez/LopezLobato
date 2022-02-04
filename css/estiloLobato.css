@@ -1043,12 +1043,6 @@
 
     /* Estilo de subtitulo */
     .subTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        display: flex;
-        justify-content: center;
-        padding-left: 50px;
-
         color: rgb(189, 24, 24);
         font-size: 70px;
         text-align: center;
@@ -1247,6 +1241,20 @@
         padding: 15px 0px;
         text-align: center;
     }
+
+    .fondo1{
+        background-color: black;
+    }
+
+    .fondo2{
+        background-color: blue;
+    }
+
+    .fondo3{
+        background-color: blueviolet;
+    }
+
+
 }
 
 
