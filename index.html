@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--Link css-->
-    <link rel="stylesheet" href="css/estiloLobato.css">
+    <!--Link BootsTrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Link de fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Satisfy&display=swap" rel="stylesheet">
     <!--Link AnimateCSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Link css-->
+    <link rel="stylesheet" href="css/estiloLobato.css">
+
     <!--Titulo de pagina-->
     <title>Inicio | Pizzeria Lobato</title>
 </head>
@@ -44,6 +47,7 @@
 
 
     <main>
+
         <section>
             <div>
                 <h2 class="sangriaAB">¡Bienvenido!</h2>
@@ -52,90 +56,213 @@
                     <a href=""><img src="img/Logos/Logo-wp.png" alt="" class="imgWP animate__animated animate__headShake"></a>
                 </div>
             </div>
-            
-
-            
-
         </section>
 
         <section>
-            <section>
-                <!--Imagen del local con la informacion bien resumida y una breve historia del local-->
-                <div class="">
-                    <div class="tamDiv">
-                        <p class="estLetra">Informacion básica (funcion de cada seccion, horario, ubicacion)</p>
-                        <p class="estLetra">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
-                    </div>
+            <!--Imagen del local con la informacion bien resumida y una breve historia del local-->
+            <div class="">
+                <div class="tamDiv">
+                    <p class="estLetra">Informacion básica (funcion de cada seccion, horario, ubicacion)</p>
+                    <p class="estLetra">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                </div>
 
-                    <div class="divFlex">
-                        <img src="img/Local.png" alt="local" class="imgLocal">
-                    </div>
-                    
-                    
-                    
+                <div class="divFlex">
+                    <img src="img/Local.png" alt="local" class="imgLocal">
                 </div>
                 
-            </section>
-    
-            <section>
-    
-                <!--En estilo carrousel, las imagenes vayan pasando, mostrando los productos mas destacados-->
+                
+                
+            </div>
+            
+        </section>
+
+        <section class="gridMain">
+            
+            <section class="pizza divFlexPC">
                 <div>
-                    <h3 class="subTitulo">Nuestras Pizzas</h2>
-                    <div class="imgTamaño">
-                        <img src="img/Pizzas/Pizza-clasica.jpg" alt="pizza1">
-                        <p class="estLetra">Pizza 1: (ingredientes...). $xxx</p>
-                        <img src="img/Pizzas/Pizza-calabresa.jpg" alt="pizza2">
-                        <p class="estLetra">Pizza 2: (ingredientes...). $xxx</p>
-                        <img src="img/Pizzas/Pizza-napolitana.jpg" alt="pizza3">
-                        <p class="estLetra">Pizza 3: (ingredientes...). $xxx</p>   
-                    </div>            
+                    <h3 class="subTitulo">Nuestras Pizzas</h3>
                 </div>
-    
-                <!--En estilo carrousel, las imagenes vayan pasando, mostrando los productos mas destacados-->
+                
+                <div id="carouselExampleIndicators" class="carousel slide tamCuadro" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Mozzarella</h4>
+                                <img class="estImg" src="img/Pizzas/Pizza-clasica.jpg" alt="pizza1">
+                                <p class="estDesc">Pizza 1: Lorem ipsum dolor sit amet. (ingredientes...).</p>
+                                <span class="precio">$xxx</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Calabresa</h4>
+                                <img class="estImg" src="img/Pizzas/Pizza-calabresa.jpg" alt="pizza2">
+                                <p class="estDesc">Pizza 2: Lorem ipsum dolor sit amet. (ingredientes...).</p>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Napolitana</h4>
+                                <img class="estImg" src="img/Pizzas/Pizza-napolitana.jpg" alt="pizza3">
+                                <span class="estDesc">Pizza 3: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Mixta</h4>
+                                <img class="estImg" src="img/Pizzas/Pizza-mixta.jpg" alt="pizza4">
+                                <span class="estDesc">Pizza 4: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="empa divFlexPC">
                 <div>
                     <h3 class="subTitulo">Nuestras Empanadas</h3>
-                    <div class="imgTamaño">
-                        <img src="img/Empandas/Empanada-criolla.jpg" alt="empanada1">
-                        <p class="estLetra">Empanada 1: (ingredientes...). $xxx</p>
-                        <img src="img/Empandas/Empanada-jyq.jpg" alt="empanada2">
-                        <p class="estLetra">Empanada 2: (ingredientes...). $xxx</p>
-                        <img src="img/Empandas/Empanada-pollo.jpg" alt="empanada3">
-                        <p class="estLetra">Empanada 3: (ingredientes...). $xxx</p>   
-                    </div>            
-                </div>
-            </section>
-    
 
-            <section class="sangriaAB">
-    
-                <!--En estilo carrousel, las imagenes vayan pasando, mostrando los productos mas destacados-->
-                <div>
-                    <h3 class="subTitulo">Promociones</h3>
-                    <div class="imgTamaño">
-                        <img src="./img/Promos/Promo1.jpg" alt="promo1">
-                        <p class="estLetra">Promo 1: (productos...). $xxx</p>
-                        <img src="./img/Promos/Promo2.jpg" alt="promo2">
-                        <p class="estLetra">Promo 2: (productos...). $xxx</p>  
-                    </div>            
                 </div>
-    
+                
+                <div id="Empandas" class="carousel slide tamCuadro" data-bs-ride="carousel">
+                    <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Empandas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Empandas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Empandas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#Empandas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Criolla</h4>
+                                <img class="estImg" src="img/Empandas/Empanada-criolla.jpg" alt="empanada1">
+                                <span class="estDesc">Empanada 1: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Jamon y Queso</h4>
+                                <img class="estImg" src="img/Empandas/Empanada-jyq.jpg" alt="empanada2">
+                                <span class="estDesc">Empanada 2: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Pollo</h4>
+                                <img class="estImg" src="img/Empandas/Empanada-pollo.jpg" alt="empanada3">
+                                <span class="estDesc">Empanada 3: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Verdura</h4>
+                                <img class="estImg" src="img/Empandas/Empanada-verdura.jpg" alt="empanada4">
+                                <span class="estDesc">Empanada 4: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Empandas" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#Empandas" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section class="promo">
+
+                <h3 class="subTitulo">Promociones</h3>
+                <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
+                <div id="Promociones" class="carousel slide tamCuadro" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Promociones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Promociones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Promo 1</h4>
+                                <img class="estImg" src="img/Promos/Promo1.jpg" alt="Promo1">
+                                <span class="estDesc">Promo 1: Lorem ipsum dolor sit amet. (productos...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="cuadroPizza imgTamaño">
+                                <h4 class="estTit">Promo 2</h4>
+                                <img class="estImg" src="img/Promos/Promo2.jpg" alt="Promo2">
+                                <span class="estDesc">Promo 2: Lorem ipsum dolor sit amet. (productos...).</span>
+                                <span class="precio">$XXX</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Promociones" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#Promociones" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+
                 <!--Para que el usuario le sea mas facil ver todos los productos, le dejo un link-->
                 <div class="sangriaA divFlexT">
                     <span class="estLetraLink">¿Queres ver todos nuestros productos? </span>
                 </div>
                 <div class="divFlexT">
-                    <span><a class="estLetra" href="">hacé click aca</a></span>
+                    <span><a class="estLetra" href="pages/productos.html">hacé click aca</a></span>
                 </div>
 
             </section>
 
         </section>
-
-
-        
-        
-        
 
     </main>
 
@@ -199,8 +326,14 @@
         <div class="footerFirma">
             <span>Hecho por Mariano Lopez 2021</span>
         </div>
+        <!--
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>-->
 
     </footer>
+    <!--Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 

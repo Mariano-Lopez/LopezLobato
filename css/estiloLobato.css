@@ -850,7 +850,7 @@
     }
 
     /* Tamaño estandar de imagen (por ahora) */
-    /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
+    /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor y no en cada etiqueta */
     .imgTamaño img {
         width: 550px;
         height: 368px;
@@ -859,6 +859,76 @@
     .imgTamaño2 img {
         width: 340px;
         height: 368px;
+    }
+
+    .cuadroPizza{
+        border: 2px solid black;
+        position: relative;
+        background-color: white;
+        width: 554px;
+        height: 520px;
+        background-color: beige;
+        
+    }
+
+    /* Estilo cuadro */
+    .estTit{
+        font-family:'Satisfy', cursive;
+        font-size: 3rem;
+        text-align: center;
+        color: rgb(126, 27, 27);
+        text-decoration: underline black;
+        
+    }
+
+    .estDesc{
+        font-size: 1.5rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .precio{
+        border-left: 2px solid black;
+        font-size: 40px;
+        font-family: 'Nunito Sans', sans-serif;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-bottom: 8px;
+    }
+
+    .estImg{
+        border: 2px solid black ;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .tamCuadro{
+        width: 554px;
+        height: 520px;
+    }
+
+    .gridMain{
+        display: grid;
+        grid-template-areas: "piz emp"
+                            "prom prom";
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .pizza{
+        grid-area: piz;
+        justify-self: center;
+    }
+
+    .empa{
+        grid-area: emp;
+        justify-self: center;
+    }
+
+    .promo{
+        grid-area: prom;
+        justify-self: center;
     }
 
     /* Estilos del menu */ 
@@ -955,6 +1025,7 @@
 
     .divFlexPC{
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
