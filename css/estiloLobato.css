@@ -803,11 +803,11 @@
     .sangriaA{
         padding-top: 25px;
     }
+
     /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
     .sangriaAB{
         padding-top: 25px;
         padding-bottom: 25px;
-
     }
 
     /*Espacio aBajo*/
@@ -1160,8 +1160,18 @@
         text-align: center;
     }
 
+    .estForm{
+        font-size: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+    }
 
-
+    .estEdad{
+        font-size: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+    }
 
     /********************************************************************/
 
@@ -1253,6 +1263,29 @@
     .fondo3{
         background-color: blueviolet;
     }
+
+    /******** Estilos CONTACTO ********/
+
+    .bordeForm{
+        
+        margin-left: 600px;
+        width: 700px;
+        height: 380px;
+        border: 2px solid black;
+        border-radius: 5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

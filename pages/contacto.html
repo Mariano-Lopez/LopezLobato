@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link css-->
-    <link rel="stylesheet" href="../css/estiloLobato.css">
+    <!--Link BootsTrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Link de fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Satisfy&display=swap" rel="stylesheet">
     <!--Link AnimateCSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/estiloLobato.css">
+
     <title>Contacto | Pizzeria Lobato</title>
 </head>
 
@@ -50,51 +53,47 @@
 
         <h3 class="secTitulo sangriaA animate__animated animate__flash">¡Dejanos tus datos!</h2>
 
-        <div class="sangriaAB">
-            <!--Colocar un asterisco en los campos obligatorios y especificarlo para el usuario-->
-            <!--Quiero colocar un formulario donde se dejen los datos basicos nombre, apellido...etc.-->
-            <form>
+        <div class="sangriaB">
+
+            <form class="bordeForm sangriaAB">
                 <fieldset class="gridForm">
-                    <legend class="centComent sangriaB">Completa con tus datos</legend>
 
                     <div class="nombre flexForm">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre" class="estForm">Nombre</label>
                         <input type="text" name="nombre" placeholder="Ingrese su nombre">
                     </div>
 
                     <div class="apellido flexForm">
-                        <label for="apellido">Apellido</label>
+                        <label for="apellido" class="estForm">Apellido</label>
                         <input type="text" name="apellido" placeholder="Ingrese su apellido">
                     </div>
 
                     <div class="telefono flexForm">
-                        <label for="tel">Telefono</label>
+                        <label for="tel" class="estForm">Telefono</label>
                         <input type="tel" name="tel" placeholder="Ingrese su telefono">
                     </div>
 
                     <div class="email flexForm">
-                        <label for="email">Correo Elctronico</label>
+                        <label for="email" class="estForm">Correo Elctronico</label>
                         <input type="text" name="email" required placeholder="Ingrese su e-mail">
                     </div>
 
                     <div class="edad flexForm">
-                        <label for="edad">Edad</label>
+                        <label for="edad" class="estForm">Edad</label>
                         <input type="number" name="edad" required placeholder="Ingrese su edad">
                     </div>
 
-                    <div class="mayor flexForm">
+                    <div class="mayor flexForm estEdad">
                         <span>*Es obligatorio ser mayor de 18.</span>
                     </div>
 
-
-
                     <div class="direccion flexForm">
-                        <label for="direccion">Direccion</label>
+                        <label for="direccion" class="estForm">Direccion</label>
                         <input type="text" name="direc" placeholder="Ingrese su direccion">
                     </div>
 
                     <div class="comentario flexForm centComent">
-                        <label for="coment">Deja tu comentario</label>
+                        <label for="coment" class="estForm">Deja tu comentario</label>
                         <textarea name="coment" id=""></textarea>
                     </div>
                     
@@ -121,66 +120,73 @@
 
     </main>
 
-    <!-- Pie de pagina-->
-    <footer class="footerLinea">
+<!-- Pie de pagina-->
+<footer class="footerLinea">
 
-        <div class="footerFlex">
-            <!--Mapa del local-->
-            <div>
-                <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
-                <div class="footerMap tamMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="footerFlex">
+        <!--Mapa del local-->
+        <div class="iframe">
+            <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
+            <div class="footerMap tamMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </div>
+        
+        <div class="red">
+            <h3 class="titFooter sangriaB">Seguinos en nuestras Redes</h3>
+            <div class="footerLogo footerFlexLogo">
+                <!--Redes Sociales-->
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
+                    <span>Instagram</span>
+                </div>
+                
+            
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
+                    <span>Facebook</span>
+                </div>
+                
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
+                    <span>Twitter</span>
                 </div>
                 
             </div>
-            
-            <div>
-                <h3 class="titFooter sangriaAB">Seguinos en nuestras Redes</h3>
-                <div class="footerLogo footerFlexLogo">
-                    <!--Redes Sociales-->
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
-                        <span>Instagram</span>
-                    </div>
-                    
-                
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
-                        <span>Facebook</span>
-                    </div>
-                    
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
-                        <span>Twitter</span>
-                    </div>
-                    
-                </div>
-            </div>
-            
+        </div>
+        
 
-            <div class="navFooter">
-                <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
-                <nav>
-                    <ul class="footerListnav gridNavfooter">
-                        <!--Secciones de la pagina-->
-                        <li class="contac"><a class="footerNav" href="../pages/contacto.html"> Contacto</a></li>
-                        <li class="prod"><a class="footerNav" href="../pages/productos.html"> Productos</a></li>
-                        <li class="sobnos"><a class="footerNav" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li class="tuped"><a class="footerNav" href="../pages/tupedido.html"> Tu pedido</a></li>
-                        <li class="irA"><a href="#arriba" class="irA">Ir al Inicio de pagina</a></li>
-                    </ul>
-                </nav>
-                <!--Ir al principio de la pagina-->
-                
-            </div>
-
+        <div class="navFooter">
+            <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
+            <nav>
+                <ul class="footerListnav gridNavfooter">
+                    <!--Secciones de la pagina-->
+                    <li class="contac"><a class="footerNav" href="../pages/contacto.html"> Contacto</a></li>
+                    <li class="prod"><a class="footerNav" href="../pages/productos.html"> Productos</a></li>
+                    <li class="sobnos"><a class="footerNav" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li class="tuped"><a class="footerNav" href="../pages/tupedido.html"> Tu pedido</a></li>
+                    <li class="irA"><a href="#arriba">Ir al Inicio de pagina</a></li>
+                    
+                </ul>
+            </nav>
+            <!--Ir al principio de la pagina-->
+            
         </div>
 
-        <!--"Firma"-->
-        <div class="footerFirma">
-            <span>Hecho por Mariano Lopez 2021</span>
-        </div>
+    </div>
 
-    </footer>
+    <!--"Firma"-->
+    <div class="footerFirma">
+        <span>Hecho por Mariano Lopez 2021</span>
+    </div>
+    <!--
+    <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+    </div>-->
+
+</footer>
+<!--Link JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
