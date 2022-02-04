@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link css-->
-    <link rel="stylesheet" href="../css/estiloLobato.css">
+    <!--Link BootsTrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Link de fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Satisfy&display=swap" rel="stylesheet">
     <!--Link AnimateCSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/estiloLobato.css">
+
     <title>Productos | Pizzeria Lobato</title>
 </head>
 <body>
@@ -49,43 +52,130 @@
         <!--Productos-->
         <div>
             <!--Cada producto va a estar en un recuadro propio con foto, ingredientes y precio-->
-            <h3 class="secTitulo">Pizzas</h3>
-            <div class="imgTamaño">
-                <!--<img src="../img/Pizzas/Pizza-calabresa.jpg" alt="pizza1">
-                <img src="../img/Pizzas/Pizza-clasica.jpg" alt="pizza2">
-                <img src="../img/Pizzas/Pizza-napolitana.jpg" alt="pizza3">
-                <img src="" alt="pizza4">-->
+            <h3 class="subTitulo marginAB">Pizzas</h3>
+            <div class="divFlexT">
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Mozzarella</h4>
+                    <img class="estImg" src="../img/Pizzas/Pizza-clasica.jpg" alt="pizza1">
+                    <p class="estDesc">Pizza 1: Lorem ipsum dolor sit amet. (ingredientes...).</p>
+                    <span class="precio">$xxx</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Calabresa</h4>
+                    <img class="estImg" src="../img/Pizzas/Pizza-calabresa.jpg" alt="pizza2">
+                    <p class="estDesc">Pizza 2: Lorem ipsum dolor sit amet. (ingredientes...).</p>
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Napolitana</h4>
+                    <img class="estImg" src="../img/Pizzas/Pizza-napolitana.jpg" alt="pizza3">
+                    <span class="estDesc">Pizza 3: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño marginA">
+                    <h4 class="estTit">Mixta</h4>
+                    <img class="estImg" src="../img/Pizzas/Pizza-mixta.jpg" alt="pizza4">
+                    <span class="estDesc">Pizza 4: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
             </div>
         </div>
         
         <div>
-            <h3 class="secTitulo">Empanadas</h3>
-            <div class="imgTamaño">
-                <img src="../img/Empandas/Empanada-criolla.jpg" alt="empanada1">
-                <img src="../img/Empandas/Empanada-jyq.jpg" alt="empanada2">
-                <img src="../img/Empandas/Empanada-pollo.jpg" alt="empanada3">
-                <img src="" alt="empanada4">
+            <h3 class="subTitulo marginAB">Empanadas</h3>
+
+            <div class="divFlexT">
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Criolla</h4>
+                    <img class="estImg" src="../img/Empandas/Empanada-criolla.jpg" alt="empanada1">
+                    <span class="estDesc">Empanada 1: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Jamon y Queso</h4>
+                    <img class="estImg" src="../img/Empandas/Empanada-jyq.jpg" alt="empanada2">
+                    <span class="estDesc">Empanada 2: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño">
+                    <h4 class="estTit">Pollo</h4>
+                    <img class="estImg" src="../img/Empandas/Empanada-pollo.jpg" alt="empanada3">
+                    <span class="estDesc">Empanada 3: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroPizza imgTamaño marginA">
+                    <h4 class="estTit">Verdura</h4>
+                    <img class="estImg" src="../img/Empandas/Empanada-verdura.jpg" alt="empanada4">
+                    <span class="estDesc">Empanada 4: Lorem ipsum dolor sit amet. (ingredientes...).</span>
+                    <span class="precio">$XXX</span>
+                </div>
             </div>
         </div>
 
         <div>
-            <h3 class="secTitulo">Gaseosas</h3>
-            <div class="imgTamaño2">
-                <img src="../img/Gaseosas/CocaComun.jpg" alt="gaseosa1">
-                <img src="../img/Gaseosas/CocaZero.jpg" alt="gaseosa2">
-                <img src="../img/Gaseosas/Sprite.jpg" alt="gaseosa3">
-                <img src="" alt="gaseosa4">
+            <h3 class="subTitulo marginAB">Gaseosas</h3>
+            <div class="imgTamaño2 divFlexT">
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Coca Cola</h4>
+                    <img class="estImg2" src="../img/Gaseosas/CocaComun.jpg" alt="coca-cola">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Coca Zero</h4>
+                    <img class="estImg2" src="../img/Gaseosas/CocaZero.jpg" alt="coca-cola zero">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Sprite</h4>
+                    <img class="estImg2" src="../img/Gaseosas/Sprite.jpg" alt="sprite">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Fanta</h4>
+                    <img class="estImg2" src="../img/Gaseosas/Fanta.jpg" alt="Fanta">
+                    <span class="precio">$XXX</span>
+                </div>
             </div>
         </div>
 
         <div>
-            <h3 class="secTitulo">Cervezas</h3>
-            <div class="imgTamaño2">
-                <img src="../img/Cervezas/Brahma.jpg" alt="cerveza1">
-                <img src="../img/Cervezas/Quilmes.jpeg" alt="cerveza2">
-                <img src="../img/Cervezas/Stella.jpg" alt="cerveza3">
-                <img src="" alt="cerveza4">
-            </div>
+            <h3 class="subTitulo marginAB">Cervezas</h3>
+
+            <div class="imgTamaño2 divFlexT">
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Brahma</h4>
+                    <img class="estImg2" src="../img/Cervezas/Brahma.jpg" alt="brahma">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Quilmes</h4>
+                    <img class="estImg2" src="../img/Cervezas/Quilmes.jpeg" alt="quilmes">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Stella Artois</h4>
+                    <img class="estImg2" src="../img/Cervezas/Stella.jpg" alt="Stella">
+                    <span class="precio">$XXX</span>
+                </div>
+
+                <div class="cuadroBebida imgTamaño2">
+                    <h4 class="estTit2">Schneider</h4>
+                    <img class="estImg2" src="../img/Cervezas/Schneider.jpg" alt="Schneider">
+                    <span class="precio">$XXX</span>
+                </div>
         </div>
 
         <!--Dejo un link para que el usuario pueda realizar su pedido a la pagina-->
@@ -99,65 +189,71 @@
     <!-- Pie de pagina-->
     <footer class="footerLinea">
 
-        <div class="footerFlex">
-            <!--Mapa del local-->
-            <div>
-                <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
-                <div class="footerMap tamMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="footerFlex">
+        <!--Mapa del local-->
+        <div class="iframe">
+            <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
+            <div class="footerMap tamMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </div>
+        
+        <div class="red">
+            <h3 class="titFooter sangriaB">Seguinos en nuestras Redes</h3>
+            <div class="footerLogo footerFlexLogo">
+                <!--Redes Sociales-->
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
+                    <span>Instagram</span>
+                </div>
+                
+            
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
+                    <span>Facebook</span>
+                </div>
+                
+                <div class="footerFlexCol">
+                    <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
+                    <span>Twitter</span>
                 </div>
                 
             </div>
-            
-            <div>
-                <h3 class="titFooter sangriaAB">Seguinos en nuestras Redes</h3>
-                <div class="footerLogo footerFlexLogo">
-                    <!--Redes Sociales-->
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-IG.png" alt="Instagram"></a>
-                        <span>Instagram</span>
-                    </div>
-                    
-                
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-FB.png" alt="Facebook"></a>
-                        <span>Facebook</span>
-                    </div>
-                    
-                    <div class="footerFlexCol">
-                        <a href=""><img src="../img/Logos/Logo-Tw.png" alt="Twitter"></a>
-                        <span>Twitter</span>
-                    </div>
-                    
-                </div>
-            </div>
-            
+        </div>
+        
 
-            <div class="gridNavfooter">
-                <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
-                <nav>
-                    <ul class="footerListnav">
-                        <!--Secciones de la pagina-->
-                        <li><a class="footerNav cont" href="../pages/contacto.html"> Contacto</a></li>
-                        <li><a class="footerNav prod" href="../pages/productos.html"> Productos</a></li>
-                        <li><a class="footerNav sobnos" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a class="footerNav tuped" href="../pages/tupedido.html"> Tu pedido</a></li>
-                        
-                    </ul>
-                </nav>
-                <!--Ir al principio de la pagina-->
-                <a href="#arriba" class="ir">Ir al Inicio de pagina</a>
-            </div>
-
+        <div class="navFooter">
+            <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
+            <nav>
+                <ul class="footerListnav gridNavfooter">
+                    <!--Secciones de la pagina-->
+                    <li class="contac"><a class="footerNav" href="../pages/contacto.html"> Contacto</a></li>
+                    <li class="prod"><a class="footerNav" href="../pages/productos.html"> Productos</a></li>
+                    <li class="sobnos"><a class="footerNav" href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li class="tuped"><a class="footerNav" href="../pages/tupedido.html"> Tu pedido</a></li>
+                    <li class="irA"><a href="#arriba">Ir al Inicio de pagina</a></li>
+                    
+                </ul>
+            </nav>
+            <!--Ir al principio de la pagina-->
+            
         </div>
 
-        <!--"Firma"-->
-        <div class="footerFirma">
-            <span>Hecho por Mariano Lopez 2021</span>
-        </div>
+    </div>
+
+    <!--"Firma"-->
+    <div class="footerFirma">
+        <span>Hecho por Mariano Lopez 2021</span>
+    </div>
+    <!--
+    <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+    </div>-->
 
     </footer>
-
+    <!--Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>

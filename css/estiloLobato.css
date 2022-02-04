@@ -815,6 +815,22 @@
         padding-bottom: 25px;
     }
 
+    /*Espacio Arriba*/
+    .marginA{
+        margin-top: 25px;
+    }
+
+    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+    .marginAB{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    /*Espacio aBajo*/
+    .marginB{
+        margin-bottom: 25px;
+    }
+
     /* Titulo principal*/
     h1{
         text-align: center;
@@ -864,7 +880,6 @@
     .cuadroPizza{
         border: 2px solid black;
         position: relative;
-        background-color: white;
         width: 554px;
         height: 520px;
         background-color: beige;
@@ -876,6 +891,14 @@
         font-family:'Satisfy', cursive;
         font-size: 3rem;
         text-align: center;
+        color: rgb(126, 27, 27);
+        text-decoration: underline black;
+        
+    }
+
+    .estTit2{
+        font-family:'Satisfy', cursive;
+        font-size: 3rem;
         color: rgb(126, 27, 27);
         text-decoration: underline black;
         
@@ -903,10 +926,32 @@
         border-right: 0px;
     }
 
+    .estImg2{
+        border-top: 2px solid black ;
+    }
+
     .tamCuadro{
         width: 554px;
         height: 520px;
     }
+
+    .cuadroBebida{
+        border: 2px solid black;
+        position: relative;
+        width: 344px;
+        height: 438px;
+        background-color: rgb(214, 128, 79);
+        
+    }
+
+
+
+
+
+
+
+
+
 
     .gridMain{
         display: grid;
@@ -1012,7 +1057,9 @@
 
     .divFlexT{
         display: flex;
-        justify-content: center;
+        flex-wrap:wrap;
+        justify-content:space-around;
+
     }
 
     .divFlexlogo{
@@ -1047,8 +1094,6 @@
         font-size: 70px;
         text-align: center;
         font-family: 'Satisfy', cursive;
-        margin-top: 25px;
-        margin-bottom: 25px;
         text-decoration-line: underline;
         text-decoration-color: rgb(23, 23, 122);
     }
