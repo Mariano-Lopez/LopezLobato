@@ -1,978 +1,636 @@
-
+@charset "UTF-8";
 /* --------------- Mediaqueries ---------------*/
-
 /* //////// CELULAR //////// */
-
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-    /* reset */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    /* ----- Index Celular ----- */
-
-    /* Hago una clase para hacer un espacio entre una secicon y otra*/
-
-    /*Espacio Arriba*/
-    .sangriaA{
-        margin-top: 20px;
-    }
-    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
-    .sangriaAB{
-        margin-top: 15px;
-        margin-bottom: 15px;
-
-    }
-
-    /*Espacio aBajo*/
-    .sangriaB{
-        margin-bottom: 20px;
-    }
-
-
-    /* Titulo principal*/
-    h1{
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        font-size: 50px;
-        color: rgb(53, 53, 141);
-    }
-
-    .divFlexlogo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-    .divFlex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .divFlexT{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .img__Logo{
-        height: 150px;
-        width: 200px;
-    }
-
-    /* Menu */ 
-
-    .nav__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        padding: 2rem;
-        font-size: 5rem;
-        font-family: 'Satisfy', cursive;
-        color: rgb(23, 23, 122);
-        
-    }
-
-    .nav__list{
-
-        display:  flex;
-        justify-content: center;
-        align-items: center;
-
-        /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
-        border: solid 2px rgb(23, 23, 122);
-        border-left: 0px;
-        border-right: 0px;
-    }
-
-    .nav__item{
-        padding: 12px;
-        font-size: 13px;
-        display: block;
-        
-    }
-
-    .nav__link{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Satisfy', cursive;
-        font-weight: bold;
-    }
-
-
-    /* Subtitulo*/
-    h2{
-        font-family: 'Satisfy', cursive;
-        text-align: center;
-        font-size: 40px;
-        color: rgb(22, 59, 10);
-        text-decoration: underline;
-        text-decoration-color: black;
-    }
-
-
-    /* Estilo de subtitulo */
-    .subTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 20px;
-
-        color: rgb(189, 24, 24);
-        font-size: 30px;
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-    .estLetra{
-        margin: 0px 15px;
-        font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-    }
-
-    .estLetraLink{
-        margin: 0px 15px;
-        font-size: 15px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-    }
-
-    /* Estilos del formulario */
-
-    .gridForm{
-        display: grid;
-
-        grid-template-areas: 
-                            "nom nom"
-                            "apell apell"
-                            "tel tel"
-                            "email email"
-                            "edad edad"
-                            "may may"
-                            "direc direc"
-                            "comen comen"
-                            "bot reset";
-        gap: 10px;
-        justify-content: center;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .nombre{
-        grid-area: nom;
-    }
-
-    .apellido{
-        grid-area: apell;
-    }
-
-    .telefono{
-        grid-area: tel;
-    }
-
-    .email{
-        grid-area: email;
-    }
-
-    .edad{
-        grid-area: edad;
-    }
-
-    .mayor{
-        justify-self: center;
-        grid-area: may;
-    }
-
-    .direccion{
-        grid-area: direc;
-    }
-    
-    .comentario{
-        grid-area: comen;
-    }
-
-    .boton{
-        width: 1fr;
-        justify-self: center;
-        grid-area: bot;
-    }
-
-    .borrar{
-        grid-area: reset;
-    }
-
-    .flexForm{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .centComent{
-        text-align: center;
-    }
-
-
-
-
-        /* Estilos del Footer*/
-
-        footer{
-            padding-top: 10px;
-            background-color: burlywood;
-        }
-        
-            
-        .footerLogo img{
-            height: 60px;
-            width: 60px;
-    
-        }
-        
-        .tamMap iframe{
-            width: 360px;
-            height: 200px;
-            }
-
-        .footerMap{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .footerFlexLogo{
-            display: flex;
-            margin: 20px 0px;
-            flex-direction: row;
-            justify-content:space-evenly;
-        }    
-        .footerNav{
-            color: rgb(189, 24, 24);
-            text-decoration: none;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            display: block;
-        }
-
-        .footerListnav{
-            list-style: none;
-        }
-    
-        .footerLinea{
-            border-top: solid 2px rgb(23, 23, 122);
-        }
-    
-        .footerFirma{
-            text-align: center;
-            padding: 20px;
-        }
-    
-        .footerFlexCol{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .titFooter{
-            text-align: center;
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 20px;
-        }
-        
-        .gridNavfooter{
-            display: grid;
-            grid-template-areas: 
-                                "cont prod"
-                                "sobnos tuped"
-                                "ir ir";
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto auto;
-            justify-content: center;
-        }
-
-        .contac{
-            justify-self: center;
-            grid-area: cont;
-        }
-
-        .prod{
-            justify-self: center;
-            grid-area: prod;
-        }
-
-        .sobnos{
-            justify-self: center;
-            grid-area: sobnos;
-        }
-
-        .tuped{
-            justify-self: center;
-            grid-area: tuped;
-        }
-
-        .irA{
-            justify-self: center;
-            grid-area: ir;
-        }
-
-
-    /* Tamaño mapa del footer w 320 h 200*/
-
-    /* Estilo y tamaño del logo de WP para que se deslice por toda la pagina*/    
-    .imgWP{
-        display: none;
-    }
-
-    .imgLocal{
-        width: 320px;
-        height: 320px;
-    }
-
-    /* Tamaño estandar de imagen (por ahora) */
-    /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
-    .imgTamaño img {
-        width: 225px;
-        height: 184px;
-    }
-
-
-    /* ----- Contacto ----- */
-
-    .secTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        color: rgb(92, 18, 126);
-        font-size: 25px;
-        margin-left: 10px;
-        font-family: 'Satisfy', cursive;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-
-    .estParrafo{
-        font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-        padding: 5px;
-    }
-
-
-    /* ----- Productos ----- */
-
-    .imgTamaño2 img {
-        width: 240px;
-        height: 268px;
-    }
-
-    .estLink{
-        font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-        color: rgb(92, 18, 126);
-    }
-
-
-    .linkPedido{
-        padding-left: 5px;
-    }
-
-}
-
-
+  /* reset */
+  * {
+    margin: 0;
+    padding: 0; }
+  /* ----- Index Celular ----- */
+  /* Hago una clase para hacer un espacio entre una secicon y otra*/
+  /*Espacio Arriba*/
+  .sangriaA {
+    margin-top: 20px; }
+  /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+  .sangriaAB {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  /*Espacio aBajo*/
+  .sangriaB {
+    margin-bottom: 20px; }
+  /* Titulo principal*/
+  h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #35358d; }
+  .divFlexlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .divFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .divFlexT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .img__Logo {
+    height: 150px;
+    width: 200px; }
+  /* Menu */
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 5rem;
+    font-family: 'Satisfy', cursive;
+    color: #17177a; }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
+    border: solid 2px #17177a;
+    border-left: 0px;
+    border-right: 0px; }
+  .nav__item {
+    padding: 12px;
+    font-size: 13px;
+    display: block; }
+  .nav__link {
+    color: #bd1818;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold; }
+  /* Subtitulo*/
+  h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #163b0a;
+    text-decoration: underline;
+    text-decoration-color: black; }
+  /* Estilo de subtitulo */
+  .subTitulo {
+    /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+    /*Se me ocurrio esta forma*/
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    color: #bd1818;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  .estLetra {
+    margin: 0px 15px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif; }
+  .estLetraLink {
+    margin: 0px 15px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center; }
+  /* Estilos del formulario */
+  .gridForm {
+    display: grid;
+    grid-template-areas: "nom nom" "apell apell" "tel tel" "email email" "edad edad" "may may" "direc direc" "comen comen" "bot reset";
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .nombre {
+    grid-area: nom; }
+  .apellido {
+    grid-area: apell; }
+  .telefono {
+    grid-area: tel; }
+  .email {
+    grid-area: email; }
+  .edad {
+    grid-area: edad; }
+  .mayor {
+    justify-self: center;
+    grid-area: may; }
+  .direccion {
+    grid-area: direc; }
+  .comentario {
+    grid-area: comen; }
+  .boton {
+    width: 1fr;
+    justify-self: center;
+    grid-area: bot; }
+  .borrar {
+    grid-area: reset; }
+  .flexForm {
+    display: flex;
+    flex-direction: column; }
+  .centComent {
+    text-align: center; }
+  /* Estilos del Footer*/
+  footer {
+    padding-top: 10px;
+    background-color: burlywood; }
+  .footerLogo img {
+    height: 60px;
+    width: 60px; }
+  .tamMap iframe {
+    width: 360px;
+    height: 200px; }
+  .footerMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footerFlexLogo {
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .footerNav {
+    color: #bd1818;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: block; }
+  .footerListnav {
+    list-style: none; }
+  .footerLinea {
+    border-top: solid 2px #17177a; }
+  .footerFirma {
+    text-align: center;
+    padding: 20px; }
+  .footerFlexCol {
+    display: flex;
+    flex-direction: column; }
+  .titFooter {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px; }
+  .gridNavfooter {
+    display: grid;
+    grid-template-areas: "cont prod" "sobnos tuped" "ir ir";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    justify-content: center; }
+  .contac {
+    justify-self: center;
+    grid-area: cont; }
+  .prod {
+    justify-self: center;
+    grid-area: prod; }
+  .sobnos {
+    justify-self: center;
+    grid-area: sobnos; }
+  .tuped {
+    justify-self: center;
+    grid-area: tuped; }
+  .irA {
+    justify-self: center;
+    grid-area: ir; }
+  /* Tamaño mapa del footer w 320 h 200*/
+  /* Estilo y tamaño del logo de WP para que se deslice por toda la pagina*/
+  .imgWP {
+    display: none; }
+  .imgLocal {
+    width: 320px;
+    height: 320px; }
+  /* Tamaño estandar de imagen (por ahora) */
+  /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
+  .imgTamaño img {
+    width: 225px;
+    height: 184px; }
+  /* ----- Contacto ----- */
+  .secTitulo {
+    /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+    /*Se me ocurrio esta forma*/
+    color: #5c127e;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Satisfy', cursive;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  .estParrafo {
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 5px; }
+  /* ----- Productos ----- */
+  .imgTamaño2 img {
+    width: 240px;
+    height: 268px; }
+  .estLink {
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    color: #5c127e; }
+  .linkPedido {
+    padding-left: 5px; } }
 
 /* //////// TABLET //////// */
-
 @media screen and (max-width: 1199px) and (min-width: 600px) {
-
-    /* reset */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-
-    /* Titulo principal*/
-    h1{
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        font-size: 70px;
-        color: rgb(53, 53, 141);
-    }
-
-    /* Subtitulo*/
-    h2{
-        font-family: 'Satisfy', cursive;
-        text-align: center;
-        font-size: 60px;
-        color: rgb(22, 59, 10);
-        text-decoration: underline;
-        text-decoration-color: black;
-    }
-
-
-    /* Estilo de subtitulo */
-    .subTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-
-        color: rgb(189, 24, 24);
-        font-size: 40px;
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-    /* Hago una clase para hacer un espacio entre una secicon y otra*/
-
-    /*Espacio Arriba*/
-    .sangriaA{
-        margin-top: 20px;
-    }
-    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
-    .sangriaAB{
-        margin-top: 15px;
-        margin-bottom: 15px;}
-
-    /*Espacio aBajo*/
-    .sangriaB{
-        margin-bottom: 20px;
-    }
-
-    .estLetraLink{
-        margin: 0px 15px;
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-    }
-
-    .divFlexlogo{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .divFlex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .divFlexT{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    /* Menu */ 
-
-    .nav__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        padding: 2rem;
-        font-size: 5rem;
-        font-family: 'Satisfy', cursive;
-        color: rgb(23, 23, 122);
-        
-    }
-
-    .nav__list{
-
-        display:  flex;
-        justify-content: center;
-        align-items: center;
-
-        /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
-        border: solid 2px rgb(23, 23, 122);
-        border-left: 0px;
-        border-right: 0px;
-    }
-
-    .nav__item{
-        padding: 25px;
-        font-size: 30px;
-        display: block;
-        
-    }
-
-    .nav__link{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Satisfy', cursive;
-        font-weight: bold;
-    }
-
-
-    
-
-    .estLetra{
-        margin: 0px 5px;
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-    }
-
-    .divFlexT{
-        display: flex;
-        justify-content: center;
-    }
-
-    .imgWP{
-        height: 60px;
-        width: 100px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-    }
-
-    .img__Logo{
-        height: 150px;
-        width: 200px;
-    }
-
-    /* Tamaño estandar de imagen (por ahora) */
-    /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
-    .imgTamaño img {
-        width: 225px;
-        height: 184px;
-    }
-
-
-    /* Estilos del formulario */
-
-    .gridForm{
-        display: grid;
-
-        grid-template-areas: 
-                            "nom apell tel"
-                            "email edad direc"
-                            "may may may"
-                            "comen comen comen"
-                            "bot bot reset";
-        gap: 10px;
-        justify-content: center;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .nombre{
-        grid-area: nom;
-    }
-
-    .apellido{
-        grid-area: apell;
-    }
-
-    .telefono{
-        grid-area: tel;
-    }
-
-    .email{
-        grid-area: email;
-    }
-
-    .edad{
-        grid-area: edad;
-    }
-
-    .mayor{
-        justify-self: center;
-        grid-area: may;
-    }
-
-    .direccion{
-        grid-area: direc;
-    }
-    
-    .comentario{
-        grid-area: comen;
-    }
-
-    .boton{
-        width: 1fr;
-        justify-self: center;
-        grid-area: bot;
-    }
-
-    .borrar{
-        grid-area: reset;
-    }
-
-    .flexForm{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .centComent{
-        text-align: center;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Estilos del Footer*/
-
-    footer{
-        padding-top: 10px;
-        background-color: burlywood;
-    }
-    
-        
-    .footerLogo img{
-        height: 60px;
-        width: 60px;
-
-    }
-    
-    .tamMap iframe{
-        width: 768px;
-        height: 400px;
-        }
-
-    .footerMap{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footerFlexLogo{
-        display: flex;
-        margin: 20px 0px;
-        flex-direction: row;
-        justify-content:space-evenly;
-    }    
-    .footerNav{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        display: block;
-    }
-
-    .footerListnav{
-        list-style: none;
-    }
-
-    .footerLinea{
-        border-top: solid 2px rgb(23, 23, 122);
-    }
-
-    .footerFirma{
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footerFlexCol{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .titFooter{
-        text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 30px;
-    }
-    
-    .gridNavfooter{
-        display: grid;
-        grid-template-areas: 
-                            "cont prod"
-                            "sobnos tuped"
-                            "ir ir";
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
-        justify-content: center;
-    }
-
-    .contac{
-        justify-self: center;
-        grid-area: cont;
-    }
-
-    .prod{
-        justify-self: center;
-        grid-area: prod;
-    }
-
-    .sobnos{
-        justify-self: center;
-        grid-area: sobnos;
-    }
-
-    .tuped{
-        justify-self: center;
-        grid-area: tuped;
-    }
-
-    .irA{
-        justify-self: center;
-        grid-area: ir;
-    }
-
-    /* ----- Contacto ----- */
-
-    .secTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        color: rgb(92, 18, 126);
-        font-size: 40px;
-        margin-left: 10px;
-        font-family: 'Satisfy', cursive;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-
-    .estParrafo{
-        font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-        padding: 5px;
-    }
-
-
-    /* ----- Productos ----- */
-
-    .imgTamaño2 img {
-        width: 240px;
-        height: 268px;
-    }
-
-    .estLink{
-        font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-        color: rgb(92, 18, 126);
-    }
-
-
-    .linkPedido{
-        padding-left: 5px;
-    }
-
-}
+  /* reset */
+  * {
+    margin: 0;
+    padding: 0; }
+  /* Titulo principal*/
+  h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: #35358d; }
+  /* Subtitulo*/
+  h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 60px;
+    color: #163b0a;
+    text-decoration: underline;
+    text-decoration-color: black; }
+  /* Estilo de subtitulo */
+  .subTitulo {
+    /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+    /*Se me ocurrio esta forma*/
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    color: #bd1818;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  /* Hago una clase para hacer un espacio entre una secicon y otra*/
+  /*Espacio Arriba*/
+  .sangriaA {
+    margin-top: 20px; }
+  /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+  .sangriaAB {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  /*Espacio aBajo*/
+  .sangriaB {
+    margin-bottom: 20px; }
+  .estLetraLink {
+    margin: 0px 15px;
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center; }
+  .divFlexlogo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+  .divFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .divFlexT {
+    display: flex;
+    justify-content: center; }
+  /* Menu */
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 5rem;
+    font-family: 'Satisfy', cursive;
+    color: #17177a; }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
+    border: solid 2px #17177a;
+    border-left: 0px;
+    border-right: 0px; }
+  .nav__item {
+    padding: 25px;
+    font-size: 30px;
+    display: block; }
+  .nav__link {
+    color: #bd1818;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold; }
+  .estLetra {
+    margin: 0px 5px;
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif; }
+  .divFlexT {
+    display: flex;
+    justify-content: center; }
+  .imgWP {
+    height: 60px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+  .img__Logo {
+    height: 150px;
+    width: 200px; }
+  /* Tamaño estandar de imagen (por ahora) */
+  /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
+  .imgTamaño img {
+    width: 225px;
+    height: 184px; }
+  /* Estilos del formulario */
+  .gridForm {
+    display: grid;
+    grid-template-areas: "nom apell tel" "email edad direc" "may may may" "comen comen comen" "bot bot reset";
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .nombre {
+    grid-area: nom; }
+  .apellido {
+    grid-area: apell; }
+  .telefono {
+    grid-area: tel; }
+  .email {
+    grid-area: email; }
+  .edad {
+    grid-area: edad; }
+  .mayor {
+    justify-self: center;
+    grid-area: may; }
+  .direccion {
+    grid-area: direc; }
+  .comentario {
+    grid-area: comen; }
+  .boton {
+    width: 1fr;
+    justify-self: center;
+    grid-area: bot; }
+  .borrar {
+    grid-area: reset; }
+  .flexForm {
+    display: flex;
+    flex-direction: column; }
+  .centComent {
+    text-align: center; }
+  /* Estilos del Footer*/
+  footer {
+    padding-top: 10px;
+    background-color: burlywood; }
+  .footerLogo img {
+    height: 60px;
+    width: 60px; }
+  .tamMap iframe {
+    width: 768px;
+    height: 400px; }
+  .footerMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footerFlexLogo {
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .footerNav {
+    color: #bd1818;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: block; }
+  .footerListnav {
+    list-style: none; }
+  .footerLinea {
+    border-top: solid 2px #17177a; }
+  .footerFirma {
+    text-align: center;
+    padding: 20px; }
+  .footerFlexCol {
+    display: flex;
+    flex-direction: column; }
+  .titFooter {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px; }
+  .gridNavfooter {
+    display: grid;
+    grid-template-areas: "cont prod" "sobnos tuped" "ir ir";
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    justify-content: center; }
+  .contac {
+    justify-self: center;
+    grid-area: cont; }
+  .prod {
+    justify-self: center;
+    grid-area: prod; }
+  .sobnos {
+    justify-self: center;
+    grid-area: sobnos; }
+  .tuped {
+    justify-self: center;
+    grid-area: tuped; }
+  .irA {
+    justify-self: center;
+    grid-area: ir; }
+  /* ----- Contacto ----- */
+  .secTitulo {
+    /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+    /*Se me ocurrio esta forma*/
+    color: #5c127e;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Satisfy', cursive;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  .estParrafo {
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 5px; }
+  /* ----- Productos ----- */
+  .imgTamaño2 img {
+    width: 240px;
+    height: 268px; }
+  .estLink {
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    color: #5c127e; }
+  .linkPedido {
+    padding-left: 5px; } }
 
 /* //////// COMPUTADORA //////// */
-
 @media only screen and (min-width: 1200px) {
-    /* reset */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    main{
-        background: rgb(127,143,246);
-        background: radial-gradient(circle, rgba(127,143,246,1) 0%, rgba(247,247,247,1) 100%);
-    }
-    
-
-    /* Hago una clase para hacer un espacio entre una secicon y otra*/
-
-    /*Espacio Arriba*/
-    .sangriaA{
-        padding-top: 25px;
-    }
-
-    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
-    .sangriaAB{
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    /*Espacio aBajo*/
-    .sangriaB{
-        padding-bottom: 25px;
-    }
-
-    /*Espacio Arriba*/
-    .marginA{
-        margin-top: 25px;
-    }
-
-    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
-    .marginAB{
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    /*Espacio aBajo*/
-    .marginB{
-        margin-bottom: 25px;
-    }
-
-    /* Titulo principal*/
-    h1{
-        text-align: center;
+  /* reset */
+  * {
+    margin: 0;
+    padding: 0; }
+  main {
+    background: #7f8ff6;
+    background: radial-gradient(circle, #7f8ff6 0%, #f7f7f7 100%); }
+  header div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    header div a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 2rem;
+      font-size: 5rem;
+      font-family: 'Satisfy', cursive;
+      color: #17177a; }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
+    border: solid 2px #17177a;
+    border-left: 0px;
+    border-right: 0px; }
+    header nav ul li {
+      padding: 1rem 1.5rem;
+      font-size: 3rem;
+      display: block; }
+      header nav ul li a {
+        color: #bd1818;
+        text-decoration: none;
         font-family: 'Satisfy', cursive;
-        font-size: 100px;
-        color: rgb(53, 53, 141);
-    }
-
-    /* Subtitulo*/
-    h2{
+        font-weight: bold; }
+      header nav ul li a:hover {
+        color: #bd1818;
+        text-decoration: none;
         font-family: 'Satisfy', cursive;
-        text-align: center;
-        font-size:80px;
-        color: rgb(22, 59, 10);
-        text-decoration: underline;
-        text-decoration-color: black;
-    }
-
-    /* Estilo y tamaño del logo de WP para que se deslice por toda la pagina*/
-
-    .imgWP{
-        height: 80px;
-        width: 130px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-    }
-
-    /*Lo arregle con flex*/
-    .img__Logo{
-        height: 150px;
-        width: 200px;
-    }
-
-    /* Tamaño estandar de imagen (por ahora) */
-    /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor y no en cada etiqueta */
-    .imgTamaño img {
-        width: 550px;
-        height: 368px;
-    }
-
-    .imgTamaño2 img {
-        width: 340px;
-        height: 368px;
-    }
-
-    .cuadroPizza{
-        border: 2px solid black;
-        position: relative;
-        width: 554px;
-        height: 520px;
-        background-color: beige;
-        border-radius: 2%;
-        
-    }
-
-    /* Estilo cuadro */
-    .estTit{
-        font-family:'Satisfy', cursive;
-        font-size: 3rem;
-        text-align: center;
-        color: rgb(126, 27, 27);
-        text-decoration: underline black;
-        
-    }
-
-    .estTit2{
-        font-family:'Satisfy', cursive;
-        font-size: 3rem;
-        color: rgb(126, 27, 27);
-        text-decoration: underline black;
-        
-    }
-
-    .estDesc{
-        font-size: 1.5rem;
-        font-family: 'Nunito Sans', sans-serif;
         font-weight: bold;
-    }
-
-    .precio{
-        border-left: 2px solid black;
-        font-size: 40px;
-        font-family: 'Nunito Sans', sans-serif;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        padding-bottom: 8px;
-    }
-
-    .estImg{
-        border: 2px solid black ;
-        border-left: 0px;
-        border-right: 0px;
-    }
-
-    .estImg2{
-        border-top: 2px solid black ;
-    }
-
-    .tamCuadro{
-        width: 554px;
-        height: 520px;
-    }
-
-    .cuadroBebida{
         border: 2px solid black;
-        border-radius: 2%;
-        position: relative;
-        width: 344px;
-        height: 438px;
-        background-color: rgb(214, 128, 79);
-        
-    }
-
-    .gridMain{
-        display: grid;
-        grid-template-areas: "piz emp"
-                            "prom prom";
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .pizza{
-        grid-area: piz;
-        justify-self: center;
-    }
-
-    .empa{
-        grid-area: emp;
-        justify-self: center;
-    }
-
-    .promo{
-        grid-area: prom;
-        justify-self: center;
-    }
-
-    /* Estilos del menu */ 
-
-
-    /*Pablo lo que te quiero consultar es como hago para separar el texto de la imagen ya que estan re pegados intente con padding pero no funciono*/
+        border-radius: 3%;
+        text-decoration: underline #17177a; }
+  /* Hago una clase para hacer un espacio entre una secicon y otra*/
+  /*Espacio Arriba*/
+  .sangriaA {
+    padding-top: 25px; }
+  /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+  .sangriaAB {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  /*Espacio aBajo*/
+  .sangriaB {
+    padding-bottom: 25px; }
+  /*Espacio Arriba*/
+  .marginA {
+    margin-top: 25px; }
+  /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+  .marginAB {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  /*Espacio aBajo*/
+  .marginB {
+    margin-bottom: 25px; }
+  /* Titulo principal*/
+  h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 100px;
+    color: #35358d; }
+  /* Subtitulo*/
+  h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 80px;
+    color: #163b0a;
+    text-decoration: underline;
+    text-decoration-color: black; }
+  /* Estilo y tamaño del logo de WP para que se deslice por toda la pagina*/
+  .imgWP {
+    height: 80px;
+    width: 130px;
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+  /*Lo arregle con flex*/
+  .img__Logo {
+    height: 150px;
+    width: 200px; }
+  /* Tamaño estandar de imagen (por ahora) */
+  /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor y no en cada etiqueta */
+  .imgTamaño img {
+    width: 550px;
+    height: 368px; }
+  .imgTamaño2 img {
+    width: 340px;
+    height: 368px; }
+  .cuadroPizza {
+    border: 2px solid black;
+    position: relative;
+    width: 554px;
+    height: 520px;
+    background-color: beige;
+    border-radius: 2%; }
+  /* Estilo cuadro */
+  .estTit {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #7e1b1b;
+    text-decoration: underline black; }
+  .estTit2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #7e1b1b;
+    text-decoration: underline black; }
+  .estDesc {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold; }
+  .precio {
+    border-left: 2px solid black;
+    font-size: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-bottom: 8px; }
+  .estImg {
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px; }
+  .estImg2 {
+    border-top: 2px solid black; }
+  .tamCuadro {
+    width: 554px;
+    height: 520px; }
+  .cuadroBebida {
+    border: 2px solid black;
+    border-radius: 2%;
+    position: relative;
+    width: 344px;
+    height: 438px;
+    background-color: #d6804f; }
+  .gridMain {
+    display: grid;
+    grid-template-areas: "piz emp" "prom prom";
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr; }
+  .pizza {
+    grid-area: piz;
+    justify-self: center; }
+  .empa {
+    grid-area: emp;
+    justify-self: center; }
+  .promo {
+    grid-area: prom;
+    justify-self: center; }
+  /* Estilos que no hacen falta por el anidamiento ver archivo _header 
     .nav__logo{
         display: flex;
         justify-content: center;
@@ -984,33 +642,27 @@
         color: rgb(23, 23, 122);
         
     }
-
     .nav__list{
-
         display:  flex;
         justify-content: center;
         align-items: center;
-
-        /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
+        
         border: solid 2px rgb(23, 23, 122);
         border-left: 0px;
         border-right: 0px;
     }
-
     .nav__item{
         padding: 1rem 1.5rem;
         font-size: 3rem;
         display: block;
         
     }
-
     .nav__link{
         color: rgb(189, 24, 24);
         text-decoration: none;
         font-family: 'Satisfy', cursive;
         font-weight: bold;
     }
-
     .nav__link:hover{
         color: rgb(189, 24, 24);
         text-decoration: none;
@@ -1019,427 +671,250 @@
         border: 2px solid black;
         border-radius: 3%;
         text-decoration: underline rgb(23, 23, 122);
-    }
-
-    /********************************************************************/
-
-    /* Estilos del main */
-
-    .imgLocal{
-        width: 600px;
-        height: 500px;
-    }
-
-    .estLetra{
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-    }
-
-    .estLetraLink{
-        margin: 0px 15px;
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-    }
-
-    .divFlex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .divFlexT{
-        display: flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-
-    }
-
-    .divFlexlogo{
-        display: flex;
-        /* Atenti al hack */
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .divFlexPC{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tamDiv{
-        margin-left: 50px;
-        width: 900px;
-        height: 100px;
-    }
-
-
-    .linkPedido{
-        padding-left: 5px;
-    }
-
-
-    /* Estilo de subtitulo */
-    .subTitulo{
-        color: rgb(189, 24, 24);
-        font-size: 70px;
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-    /* Lo uso en la parte de contactos para separar el comienzo del formulario*/
-
-    .secTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        display: flex;
-        justify-content: center;
-
-        color: rgb(92, 18, 126);
-        font-size: 40px;
-        text-align: center;
-        font-family: 'Satisfy', cursive;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(23, 23, 122);
-    }
-
-    .estParrafo{
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-        padding-left: 30px;
-    }
-
-    .estLink{
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: center;
-        color: rgb(92, 18, 126);
-    }
-
-    /* Estilo boton de Medio de pago (Estuve probando y no queda bien xd)*/
-    .estPago{
-        background-color: black;
-        text-decoration: none;
-        color: white;
-    }
-
-    /* Estilos del formulario */
-
-    .gridForm{
-        display: grid;
-
-        grid-template-areas: 
-                            "nom apell tel"
-                            "email edad direc"
-                            "may may may"
-                            "comen comen comen"
-                            "bot bot reset";
-        gap: 10px;
-        justify-content: center;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .nombre{
-        grid-area: nom;
-    }
-
-    .apellido{
-        grid-area: apell;
-    }
-
-    .telefono{
-        grid-area: tel;
-    }
-
-    .email{
-        grid-area: email;
-    }
-
-    .edad{
-        grid-area: edad;
-    }
-
-    .mayor{
-        justify-self: center;
-        grid-area: may;
-    }
-
-    .direccion{
-        grid-area: direc;
-    }
-    
-    .comentario{
-        grid-area: comen;
-    }
-
-    .boton{
-        width: 1fr;
-        justify-self: center;
-        grid-area: bot;
-    }
-
-    .borrar{
-        grid-area: reset;
-    }
-
-    .flexForm{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .centComent{
-        text-align: center;
-    }
-
-    .estForm{
-        font-size: 30px;
-        font-family: 'Nunito Sans', sans-serif;
-        font-style: italic;
-    }
-
-    .estEdad{
-        font-size: 10px;
-        font-family: 'Nunito Sans', sans-serif;
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    /********************************************************************/
-
-    /* Estilos del Footer*/
-
-    footer{
-        padding-top: 30px;
-        background-color: burlywood;
-    }
-
-    .tamMap iframe{
-        width: 500px;
-        height: 200px;
-        }
-
-    .titFooter{
-        text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 30px;
-    }
-
-    .footerFlex{
-        display:grid;
-        grid-template-areas: "mapa redes nav";
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-
-    }
-
-    .iframe{
-        justify-self: center;
-        grid-area: mapa;
-    }
-
-    .red{
-        justify-self: center;
-        grid-area: redes;
-    }
-    
-    .navFooter{
-        justify-self: center;
-        grid-area: nav;
-    }
-
-    .footerLogo img{
-        height: 60px;
-        width: 60px;
-
-    }
-
-    .footerFlexLogo{
-        display: flex;
-        justify-content: space-evenly;
-        
-        /*margin: 50px;*/
-    }
-
-    .footerFlexCol{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerNav{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    .footerLinea{
-        border-top: solid 2px rgb(23, 23, 122);
-    }
-
-    .footerFirma{
-        padding: 15px 0px;
-        text-align: center;
-    }
-
-    .fondo1{
-        background-color: black;
-    }
-
-    .fondo2{
-        background-color: blue;
-    }
-
-    .fondo3{
-        background-color: blueviolet;
-    }
-
-    /******** Estilos CONTACTO ********/
-
-    .bordeForm{
-        
-        margin-left: 600px;
-        width: 700px;
-        height: 380px;
-        border: 2px solid black;
-        border-radius: 5%;
-    }
-
-
-    /******** Estilos PEDIDO ********/
-
-
-    .gridPedido{
-        display: grid;
-        grid-template-areas: "pi em"
-                            "beb cer"
-                            "agr pag"
-                            "acl acl";
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
-        justify-content: space-evenly;
-        gap: 20px;
-        
-    }
-
-    .PedPiz{
-        grid-area: pi;
-    }
-
-    .PedEmp{
-        grid-area: em;
-    }
-
-    .PedBeb{
-        grid-area: beb;
-    }
-
-    .PedCer{
-        grid-area: cer;
-    }
-
-    .PedAgr{
-        grid-area: agr;
-        justify-self: center;
-    }
-
-    .PedPag{
-        grid-area: pag;
-        justify-self: center;
-    }
-
-    .PedAcl{
-        grid-area: acl;
-    }
-
-    .PedCuadro{
-        border: 2px solid black;
-        border-radius: 5%;
-        
-        width: 550px;
-        height: 350px;
-    }
-
-    .gridDatos{
-        display: grid;
-        grid-template-areas: "nom email"
-                            "dir tel";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-content: space-evenly;
-        gap: 15px;
-        }
-
-    .datNom{
-        grid-area: nom;
-    }
-
-    .datEmail{
-        grid-area: email;
-    }
-
-    .datDir{
-        grid-area: dir;
-    }
-
-    .datTel{
-        grid-area: tel;
-    }
-
-    .pedDatos{
-        border: 2px solid black;
-        border-radius: 5%;
-        
-        width: 550px;
-        height: 250px;
-    }
-
-
-    .gridTotal{
-        display: grid;
-        grid-template-areas: "tit1 tit2"
-                            "pedido datos"
-                            "enviar enviar";
-        grid-auto-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: space-between;
-
-    }
-
-    .totTit1{
-        grid-area:tit1 ;
-    }
-
-    .totTit2{
-        grid-area:tit2 ;
-    }
-
-    .totPedido{
-        grid-area:pedido ;
-    }
-
-    .totDatos{
-        grid-area:datos ;
-    }
-
-    .totEnviar{
-        grid-area:enviar;
-        justify-self: center;
-    }
-}
-
-
-
-
-
-
-
+    }*/
+  /********************************************************************/
+  /* Estilos del main */
+  .imgLocal {
+    width: 600px;
+    height: 500px; }
+  .estLetra {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif; }
+  .estLetraLink {
+    margin: 0px 15px;
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center; }
+  .divFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .divFlexT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .divFlexlogo {
+    display: flex;
+    /* Atenti al hack */
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+  .divFlexPC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .tamDiv {
+    margin-left: 50px;
+    width: 900px;
+    height: 100px; }
+  .linkPedido {
+    padding-left: 5px; }
+  /* Estilo de subtitulo */
+  .subTitulo {
+    color: #bd1818;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  /* Lo uso en la parte de contactos para separar el comienzo del formulario*/
+  .secTitulo {
+    /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+    /*Se me ocurrio esta forma*/
+    display: flex;
+    justify-content: center;
+    color: #5c127e;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-decoration-line: underline;
+    text-decoration-color: #17177a; }
+  .estParrafo {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 30px; }
+  .estLink {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    color: #5c127e; }
+  /* Estilo boton de Medio de pago (Estuve probando y no queda bien xd)*/
+  .estPago {
+    background-color: black;
+    text-decoration: none;
+    color: white; }
+  /* Estilos del formulario */
+  .gridForm {
+    display: grid;
+    grid-template-areas: "nom apell tel" "email edad direc" "may may may" "comen comen comen" "bot bot reset";
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .nombre {
+    grid-area: nom; }
+  .apellido {
+    grid-area: apell; }
+  .telefono {
+    grid-area: tel; }
+  .email {
+    grid-area: email; }
+  .edad {
+    grid-area: edad; }
+  .mayor {
+    justify-self: center;
+    grid-area: may; }
+  .direccion {
+    grid-area: direc; }
+  .comentario {
+    grid-area: comen; }
+  .boton {
+    width: 1fr;
+    justify-self: center;
+    grid-area: bot; }
+  .borrar {
+    grid-area: reset; }
+  .flexForm {
+    display: flex;
+    flex-direction: column; }
+  .centComent {
+    text-align: center; }
+  .estForm {
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic; }
+  .estEdad {
+    font-size: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold; }
+  /********************************************************************/
+  /* Estilos del Footer*/
+  footer {
+    padding-top: 30px;
+    background-color: burlywood; }
+  .tamMap iframe {
+    width: 500px;
+    height: 200px; }
+  .titFooter {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px; }
+  .footerFlex {
+    display: grid;
+    grid-template-areas: "mapa redes nav";
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; }
+  .iframe {
+    justify-self: center;
+    grid-area: mapa; }
+  .red {
+    justify-self: center;
+    grid-area: redes; }
+  .navFooter {
+    justify-self: center;
+    grid-area: nav; }
+  .footerLogo img {
+    height: 60px;
+    width: 60px; }
+  .footerFlexLogo {
+    display: flex;
+    justify-content: space-evenly;
+    /*margin: 50px;*/ }
+  .footerFlexCol {
+    display: flex;
+    flex-direction: column; }
+  .footerNav {
+    color: #bd1818;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding-bottom: 20px; }
+  .footerLinea {
+    border-top: solid 2px #17177a; }
+  .footerFirma {
+    padding: 15px 0px;
+    text-align: center; }
+  .fondo1 {
+    background-color: black; }
+  .fondo2 {
+    background-color: blue; }
+  .fondo3 {
+    background-color: blueviolet; }
+  /******** Estilos CONTACTO ********/
+  .bordeForm {
+    margin-left: 600px;
+    width: 700px;
+    height: 380px;
+    border: 2px solid black;
+    border-radius: 5%; }
+  /******** Estilos PEDIDO ********/
+  .gridPedido {
+    display: grid;
+    grid-template-areas: "pi em" "beb cer" "agr pag" "acl acl";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-evenly;
+    gap: 20px; }
+  .PedPiz {
+    grid-area: pi; }
+  .PedEmp {
+    grid-area: em; }
+  .PedBeb {
+    grid-area: beb; }
+  .PedCer {
+    grid-area: cer; }
+  .PedAgr {
+    grid-area: agr;
+    justify-self: center; }
+  .PedPag {
+    grid-area: pag;
+    justify-self: center; }
+  .PedAcl {
+    grid-area: acl; }
+  .PedCuadro {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 550px;
+    height: 350px; }
+  .gridDatos {
+    display: grid;
+    grid-template-areas: "nom email" "dir tel";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    gap: 15px; }
+  .datNom {
+    grid-area: nom; }
+  .datEmail {
+    grid-area: email; }
+  .datDir {
+    grid-area: dir; }
+  .datTel {
+    grid-area: tel; }
+  .pedDatos {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 550px;
+    height: 250px; }
+  .gridTotal {
+    display: grid;
+    grid-template-areas: "tit1 tit2" "pedido datos" "enviar enviar";
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between; }
+  .totTit1 {
+    grid-area: tit1; }
+  .totTit2 {
+    grid-area: tit2; }
+  .totPedido {
+    grid-area: pedido; }
+  .totDatos {
+    grid-area: datos; }
+  .totEnviar {
+    grid-area: enviar;
+    justify-self: center; } }

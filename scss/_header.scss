@@ -1,0 +1,52 @@
+// Anidamiento :D //
+
+header{
+    div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 2rem;
+            font-size: 5rem;
+            font-family: 'Satisfy', cursive;
+            color: #17177a;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
+            border: solid 2px #17177a;
+            border-left: 0px;
+            border-right: 0px;
+            li{
+                padding: 1rem 1.5rem;
+                font-size: 3rem;
+                display: block;
+                a{
+                    color: #bd1818;
+                    text-decoration: none;
+                    font-family: 'Satisfy', cursive;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: rgb(189, 24, 24);
+                    text-decoration: none;
+                    font-family: 'Satisfy', cursive;
+                    font-weight: bold;
+                    border: 2px solid black;
+                    border-radius: 3%;
+                    text-decoration: underline rgb(23, 23, 122);
+                }
+            }
+        }
+        
+    }
+}
