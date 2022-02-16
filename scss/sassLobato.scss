@@ -795,14 +795,12 @@
         background: radial-gradient(circle, rgba(127,143,246,1) 0%, rgba(247,247,247,1) 100%);
     }
     
-    @import "_header";
+    @import "components/_header";
+    @import "components/_extends";
+    @import "components/_mapas";
+    @import "components/_mixins";
+
     
-
-
-
-
-
-
     // Uso de variable //
 
     $color-titulo: rgb(53, 53, 141);
@@ -847,7 +845,7 @@
     }
 
     /* Titulo principal*/
-    h1{
+    .nombreNegocio{
         text-align: center;
         font-family: 'Satisfy', cursive;
         font-size: 100px;
@@ -855,7 +853,7 @@
     }
 
     /* Subtitulo*/
-    h2{
+    h1{
         font-family: 'Satisfy', cursive;
         text-align: center;
         font-size:80px;
@@ -867,8 +865,7 @@
     /* Estilo y tamaño del logo de WP para que se deslice por toda la pagina*/
 
     .imgWP{
-        height: 80px;
-        width: 130px;
+        @include Tamaños(130px, 80px);
         position: fixed;
         bottom: 0;
         right: 0;
@@ -876,47 +873,50 @@
 
     /*Lo arregle con flex*/
     .img__Logo{
-        height: 150px;
-        width: 200px;
+        @include Tamaños(200px, 150px);
     }
 
     /* Tamaño estandar de imagen (por ahora) */
     /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor y no en cada etiqueta */
     .imgTamaño img {
-        width: 550px;
-        height: 368px;
+        @include Tamaños(550px, 368px);
     }
 
     .imgTamaño2 img {
-        width: 340px;
-        height: 368px;
+        @include Tamaños(340px, 368px);
     }
 
+    /* Uso del Mapa */
     .cuadroPizza{
-        border: 2px solid black;
-        position: relative;
-        width: 554px;
-        height: 520px;
-        background-color: beige;
-        border-radius: 2%;
+        border: map-get($map:$Cuadro1, $key:borde-P );
+        position: map-get($map:$Cuadro1, $key:position-P );
+        width: map-get($map:$Cuadro1, $key:width-P );
+        height: map-get($map:$Cuadro1, $key:height-P );
+        background-color: map-get($map:$Cuadro1, $key:background-color-P );
+        border-radius: map-get($map:$Cuadro1, $key: border-radius-P );
+    }
+
+    .cuadroBebida{
+        border:map-get($map: $Cuadro2, $key: borde-B) ;
+        border-radius:map-get($map: $Cuadro2, $key: radioBorde-B) ;
+        position:map-get($map: $Cuadro2, $key: position-B) ;
+        width:map-get($map: $Cuadro2, $key: width-B) ;
+        height:map-get($map: $Cuadro2, $key: height-B) ;
+        background-color:map-get($map: $Cuadro2, $key:background-color-B );
         
     }
+
+
 
     /* Estilo cuadro */
+
     .estTit{
-        font-family:'Satisfy', cursive;
-        font-size: 3rem;
+        @extend %TitulodeCuadro;
         text-align: center;
-        color: rgb(126, 27, 27);
-        text-decoration: underline black;
-        
     }
 
     .estTit2{
-        font-family:'Satisfy', cursive;
-        font-size: 3rem;
-        color: rgb(126, 27, 27);
-        text-decoration: underline black;
+        @extend %TitulodeCuadro
         
     }
 
@@ -946,20 +946,12 @@
         border-top: 2px solid black ;
     }
 
+
     .tamCuadro{
-        width: 554px;
-        height: 520px;
+        @include Tamaños(554px, 520px);
     }
 
-    .cuadroBebida{
-        border: 2px solid black;
-        border-radius: 2%;
-        position: relative;
-        width: 344px;
-        height: 438px;
-        background-color: rgb(214, 128, 79);
-        
-    }
+    
 
     .gridMain{
         display: grid;
@@ -984,56 +976,12 @@
         justify-self: center;
     }
 
-    /* Estilos que no hacen falta por el anidamiento ver archivo _header 
-    .nav__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        padding: 2rem;
-        font-size: 5rem;
-        font-family: 'Satisfy', cursive;
-        color: rgb(23, 23, 122);
-        
-    }
-    .nav__list{
-        display:  flex;
-        justify-content: center;
-        align-items: center;
-        
-        border: solid 2px rgb(23, 23, 122);
-        border-left: 0px;
-        border-right: 0px;
-    }
-    .nav__item{
-        padding: 1rem 1.5rem;
-        font-size: 3rem;
-        display: block;
-        
-    }
-    .nav__link{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Satisfy', cursive;
-        font-weight: bold;
-    }
-    .nav__link:hover{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Satisfy', cursive;
-        font-weight: bold;
-        border: 2px solid black;
-        border-radius: 3%;
-        text-decoration: underline rgb(23, 23, 122);
-    }*/
-
     /********************************************************************/
 
     /* Estilos del main */
 
     .imgLocal{
-        width: 600px;
-        height: 500px;
+        @include Tamaños(600px, 500px);
     }
 
     .estLetra{
@@ -1063,7 +1011,6 @@
 
     .divFlexlogo{
         display: flex;
-        /* Atenti al hack */
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
@@ -1077,8 +1024,7 @@
 
     .tamDiv{
         margin-left: 50px;
-        width: 900px;
-        height: 100px;
+        @include Tamaños(900px, 100px);
     }
 
 
@@ -1104,7 +1050,6 @@
         /*Se me ocurrio esta forma*/
         display: flex;
         justify-content: center;
-
         color: $color-titSeccion;
         font-size: 40px;
         text-align: center;
@@ -1227,8 +1172,7 @@
     }
 
     .tamMap iframe{
-        width: 500px;
-        height: 200px;
+        @include Tamaños(500px, 200px);
         }
 
     .titFooter{
@@ -1312,10 +1256,8 @@
     /******** Estilos CONTACTO ********/
 
     .bordeForm{
-        
+        @include Tamaños(700px, 380px);
         margin-left: 600px;
-        width: 700px;
-        height: 380px;
         border: 2px solid black;
         border-radius: 5%;
     }
@@ -1404,9 +1346,7 @@
     .pedDatos{
         border: 2px solid black;
         border-radius: 5%;
-        
-        width: 550px;
-        height: 250px;
+        @include Tamaños(550px, 250px);
     }
 
 
