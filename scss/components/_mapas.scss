@@ -1,11 +1,11 @@
 $Cuadro1: (
-        borde-P: 2px solid black,
-        position-P: relative,
-        width-P: 554px,
-        height-P: 520px,
-        background-color-P: beige,
-        border-radius-P: 2%
-        );
+    borde-P: 2px solid black,
+    position-P: relative,
+    width-P: 554px,
+    height-P: 520px,
+    background-color-P: beige,
+    border-radius-P: 2%
+    );
 
 $Cuadro2:(
     borde-B: 2px solid black,
@@ -15,3 +15,19 @@ $Cuadro2:(
     height-B: 438px,
     background-color-B: rgb(214, 128, 79)
 );
+
+$Cuadro3:(
+    borde-I: 2px solid black,
+    radioBorde-I: 2%,
+    width-I: 1200px,
+    height-I: 550px,
+    background-color-I: beige
+    );
+
+$Cuadro4:(
+    borde-M: 2px solid black,
+    radioBorde-M: 2%,
+    width-M: 554px,
+    height-M: 520px,
+    background-color-M: rgb(204, 110, 56)
+    );

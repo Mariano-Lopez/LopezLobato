@@ -27,7 +27,7 @@
     <title>Inicio | Pizzeria Lobato</title>
 </head>
 <body>
-    <header>
+    <header id="arriba">
         <!--Nombre del negocio y logo-->
         
         <div class="divFlexlogo">
@@ -49,41 +49,45 @@
     </header>
 
 
-    <main>
+    <main >
+        <h1 class="sangriaA">¡Bienvenido!</h1>
+        
+        <section class="divFlex">
+            <div class="cuadroInfo ">
+                <!--Imagen del local con la informacion del local-->
+                <div class="divFlex ">
+                    
 
-        <section>
-            <div>
-                <h1 class="sangriaAB">¡Bienvenido!</h1>
-                <!--Por ahora me parece poner aca el logo de whatsapp para qu siga en toda la pagina-->
-                <div>
-                    <a href=""><img src="img/Logos/Logo-wp.png" alt="" class="imgWP animate__animated animate__headShake"></a>
+                    <div>
+                        <img src="img/Local.png" alt="local" class="imgLocal">
+                    </div>
+                    <div class="sangriaA">
+                        <h2>Informacion de nuestro local</h2>
+                        <ul>
+                            <li>Abierto de Martes a Domingo de 13 a 00 (feriados de 13 a 23).</li>
+                            <li>Estamos en Av. Emilio Castro 669.</li>
+                            <li>Te dejamos nuestro Whatsap por cualquier consulta o pedido. <a href=""><img src="img/Logos/Logo-wp.png" alt="" class="imgWP"></a></li>
+                            <li>Tenemos la mejor calidad de pizzas y empanadas de La Matanza.</li>
+                            <li>Aceptamos todos los medios de pago.</li>
+                            <li>Hacemos entregas a domicilio.</li>
+                            <li> ¿Querés ver nuestros productos?, hacé <a href="pages/productos.html">click aca</a></li>
+                            <li> ¿Querés hacer un pedido?, hacé <a href="pages/tupedido.html">click aca</a></li>
+                            
+                        </ul>
+                        <p>Inaugurado en 1973 por los 3 hermanos Lobato, Fernando, Rolando y Sebastián. Decidieron compartir sus mejores recetas de pizzas y empanadas primero a los vecinos, al barrio y finalmente, después de mucho tiempo, a toda Capital.</p>
+                    </div>
+
                 </div>
+                
             </div>
         </section>
-
-        <section>
-            <!--Imagen del local con la informacion bien resumida y una breve historia del local-->
-            <div class="">
-                <div class="tamDiv">
-                    <p class="estLetra">Informacion básica (funcion de cada seccion, horario, ubicacion)</p>
-                    <p class="estLetra">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
-                </div>
-
-                <div class="divFlex">
-                    <img src="img/Local.png" alt="local" class="imgLocal">
-                </div>
-                
-                
-                
-            </div>
             
-        </section>
 
         <section class="gridMain">
             
             <section class="pizza divFlexPC">
                 <div>
-                    <h3 class="subTitulo marginAB">Nuestras Pizzas</h3>
+                    <h3 class="subTitulo marginA">Nuestras Pizzas</h3>
                 </div>
                 
                 <div id="carouselExampleIndicators" class="carousel slide tamCuadro" data-bs-ride="carousel">
@@ -143,7 +147,7 @@
 
             <section class="empa divFlexPC">
                 <div>
-                    <h3 class="subTitulo marginAB">Nuestras Empanadas</h3>
+                    <h3 class="subTitulo marginA">Nuestras Empanadas</h3>
                 </div>
                 
                 <div id="Empandas" class="carousel slide tamCuadro" data-bs-ride="carousel">
@@ -211,7 +215,7 @@
 
             <section class="promo">
 
-                <h3 class="subTitulo marginAB">Promociones</h3>
+                <h3 class="subTitulo marginB">Promociones</h3>
                 <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
                 <div id="Promociones" class="carousel slide tamCuadro" data-bs-ride="carousel">
 
@@ -254,6 +258,13 @@
 
                 </div>
             </section>
+                
+            <section class="mainMap divFlexPC">
+                <h3 class="subTitulo marginB">¿Donde estamos?</h3>
+                <div class="tamMap footerMap cuadroMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
         </section>
 
         <!--Para que el usuario le sea mas facil ver todos los productos, le dejo un link-->
@@ -266,68 +277,86 @@
 
     <!-- Pie de pagina-->
     <footer class="footerLinea">
-
-        <div class="footerFlex">
+        <section class="footerFlex">
             <!--Mapa del local-->
-            <div class="iframe">
-                <h3 class="titFooter sangriaB">¿Donde estamos?</h3>
-                <div class="footerMap tamMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <section class="iframe">
+                <h3 class="titFooter">¡Contactate con nosotros!</h3>
+                <div class="divFlex">
+                    <a href=""><img src="img/Logos/Logo-wp.png" alt="Logo Whatsap" class="footerWp"></a>
                 </div>
                 
-            </div>
+                
+            </section>
             
-            <div class="red">
-                <h3 class="titFooter sangriaB">Seguinos en nuestras Redes</h3>
-                <div class="footerLogo footerFlexLogo">
+            <section class="red">
+                <h3 class="titFooter">Seguinos en nuestras Redes</h3>
+                <div class="footerFlexLogo">
                     <!--Redes Sociales-->
                     <div class="footerFlexCol">
-                        <a href=""><img src="./img/Logos/Logo-IG.png" alt="Instagram"></a>
-                        <span>Instagram</span>
+                        <div class="divFlex">
+                            <a href=""><img src="./img/Logos/Logo-IG.png" alt="Instagram" class="footerLogo"></a>
+                        </div>
+                        <span class="prueba">Instagram</span>
                     </div>
                     
                 
                     <div class="footerFlexCol">
-                        <a href=""><img src="./img/Logos/Logo-FB.png" alt="Facebook"></a>
-                        <span>Facebook</span>
+                        <a href=""><img src="./img/Logos/Logo-FB.png" alt="Facebook" class="footerFB"></a>
+                        <span class="prueba">Facebook</span>
                     </div>
                     
                     <div class="footerFlexCol">
-                        <a href=""><img src="./img/Logos/Logo-Tw.png" alt="Twitter"></a>
-                        <span>Twitter</span>
+                        <a href=""><img src="./img/Logos/Logo-Tw.png" alt="Twitter" class="footerLogo"></a>
+                        <span class="prueba">Twitter</span>
                     </div>
                     
                 </div>
-            </div>
+            </section>
             
-
-            <div class="navFooter">
+            <section class="navFooter">
                 <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
+                <h3 class="titFooter">¡Explorá nuestra pagina!</h3>
                 <nav>
-                    <ul class="footerListnav gridNavfooter">
+                    <ul class="footerListnav gridNavfooter divFlex">
                         <!--Secciones de la pagina-->
-                        <li class="contac"><a class="footerNav" href="pages/contacto.html"> Contacto</a></li>
-                        <li class="prod"><a class="footerNav" href="pages/productos.html"> Productos</a></li>
-                        <li class="sobnos"><a class="footerNav" href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li class="tuped"><a class="footerNav" href="pages/tupedido.html"> Tu pedido</a></li>
-                        <li class="irA"><a href="#arriba">Ir al Inicio de pagina</a></li>
+                        <li class="contac">
+                            <ul class="footerListnav divFlex">
+                                <li><img src="img/Logos/iconos/icono-Contacto.png" alt="icono contacto" class="icono"></li>
+                                <li><a class="footerNav" href="pages/contacto.html"> Contacto</a></li>
+                            </ul></li>
+                        <li class="prod">
+                            <ul class="divFlex footerListnav">
+                                <li><img src="img/Logos/iconos/icono-Productos.png" alt="icono productos" class="icono"></li>
+                                <li><a class="footerNav" href="pages/productos.html"> Productos</a></li>
+                            </ul></li>
+                        <li class="sobnos">
+                            <ul class="divFlex footerListnav">
+                                <li><img src="img/Logos/iconos/icono-SobreN.png" alt="icono historia" class="icono"></li>
+                                <li><a class="footerNav" href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                            </ul></li>
+                        <li class="tuped">
+                            <ul class="footerListnav divFlex">
+                                <li><img src="img/Logos/iconos/icono-TuP.png" alt="icono pedidos" class="icono"></li>
+                                <li><a class="footerNav" href="pages/tupedido.html"> Tu pedido</a></li>
+                            </ul>
+                        </li>
+                        <li class="irA">
+                            <ul class="divFlex footerListnav">
+                                <li><img src="img/Logos/iconos/icono-Arriba.png" alt="icono princio de pagina" class="icono"></li>
+                                <li><a href="#arriba" class="footerA">Principio de página</a></li>
+                            </ul></li>
                         
                     </ul>
                 </nav>
                 <!--Ir al principio de la pagina-->
                 
-            </div>
-
-        </div>
+            </section>
+        </section>
 
         <!--"Firma"-->
         <div class="footerFirma">
             <span>Hecho por Mariano Lopez 2021</span>
         </div>
-        <!--
-        <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>-->
 
     </footer>
 

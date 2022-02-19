@@ -1,0 +1,167 @@
+// Estilos del footer //
+
+
+/********************************************************************/
+
+    /* Estilos del Footer*/
+
+    footer{
+        padding-top: 30px;
+        background-color: burlywood;
+    }
+
+    .tamMap iframe{
+        @include Tamaños(500px, 200px);
+        }
+
+    .titFooter{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 30px;
+    }
+
+    .footerFlex{
+        display:grid;
+        grid-template-areas: "mapa redes nav";
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        gap: 20px;
+
+    }
+
+    .iframe{
+        justify-self: center;
+        grid-area: mapa;
+    }
+
+    .red{
+        justify-self: center;
+        grid-area: redes;
+    }
+    
+    .navFooter{
+        justify-self: center;
+        grid-area: nav;
+    }
+
+    .footerLogo{
+        @include Tamaños(60px, 60px)
+
+    }
+
+    .footerFB{
+        @include Tamaños(70px, 60px)
+    }
+
+    .footerWp{
+        @include Tamaños(100px,60px )
+    }
+
+    .footerFlexLogo{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+
+    .prueba{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+    }
+    
+    .footerFlexCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerNav{
+        color: rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+        text-decoration-color: black;
+        display: block;
+        padding-bottom: 20px;
+    }
+    .footerA{
+        color: rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+        text-decoration-color: black;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .footerListnav{
+        list-style: none;
+    }
+
+    .footerLinea{
+        border-top: solid 2px rgb(23, 23, 122);
+    }
+
+    .footerFirma{
+        padding: 15px 0px;
+        text-align: center;
+    }
+
+
+    .gridNavfooter1{
+        display: grid;
+        grid-template-areas: 
+                            "cont prod"
+                            "sobnos tuped"
+                            "ir ir";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contac{
+        justify-self: center;
+        grid-area: cont;
+    }
+
+    .prod{
+        justify-self: center;
+        grid-area: prod;
+    }
+
+    .sobnos{
+        justify-self: center;
+        grid-area: sobnos;
+    }
+
+    .tuped{
+        justify-self: center;
+        grid-area: tuped;
+    }
+
+    .irA{
+        justify-self: center;
+        grid-area: ir;
+    }
+
+    .icono{
+        @include Tamaños (30px, 30px);
+        margin-right: 5px;
+    }
+
+
+    .fondo1{
+        background-color: black;
+    }
+
+    .fondo2{
+        background-color: blue;
+    }
+
+    .fondo3{
+        background-color: blueviolet;
+    }
