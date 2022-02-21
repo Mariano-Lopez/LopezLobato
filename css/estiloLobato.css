@@ -540,7 +540,7 @@
   .sangriaB {
     margin-bottom: 20px; }
   /* Titulo principal*/
-  h1 {
+  .nombreNegocio {
     text-align: center;
     font-family: 'Satisfy', cursive;
     font-size: 50px;
@@ -588,7 +588,7 @@
     font-family: 'Satisfy', cursive;
     font-weight: bold; }
   /* Subtitulo*/
-  h2 {
+  h1 {
     font-family: 'Satisfy', cursive;
     text-align: center;
     font-size: 40px;
