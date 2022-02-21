@@ -1,4 +1,15 @@
+/* --------------- Mediaqueries ---------------*/
 
+/* //////// CELULAR //////// */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    %TitulodeCuadro-C{
+        font-family:'Satisfy', cursive;
+        font-size: 2rem;
+        color: rgb(126, 27, 27);
+        text-decoration: underline black;
+    }
+}
 
 
 

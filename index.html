@@ -36,7 +36,7 @@
         </div>
         
         
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-primary">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,20 +45,20 @@
             
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <ul class="nav__list">
+            <div>
+                <ul class="nav__listC">
                     <!--Secciones de la pagina-->
-                    <li class="nav__item"><a class="nav__link" href="pages/contacto.html"> Contacto</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/productos.html"> Productos</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/sobrenosotros.html"> Sobre Nosotros</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/tupedido.html">Tu pedido</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="pages/contacto.html"> Contacto</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="pages/productos.html"> Productos</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="pages/tupedido.html">Tu pedido</a></li>
                 </ul>
             </div>
         </div>
 
 
         <!--Menu de navegacion-->
-        <nav>
+        <nav class="hideNav">
             <ul class="nav__list">
                 <!--Secciones de la pagina-->
                 <li class="nav__item"><a class="nav__link" href="pages/contacto.html"> Contacto</a></li>
@@ -72,7 +72,7 @@
 
 
     <main >
-        <h1 class="sangriaA">¡Bienvenido!</h1>
+        <h1>¡Bienvenido!</h1>
         
         <section class="divFlex">
             <div class="cuadroInfo ">
@@ -108,7 +108,7 @@
             
             <section class="pizza divFlexPC">
                 <div>
-                    <h3 class="subTitulo marginA">Nuestras Pizzas</h3>
+                    <h3 class="subTitulo marginA marginAC">Nuestras Pizzas</h3>
                 </div>
                 
                 <div id="carouselExampleIndicators" class="carousel slide tamCuadro" data-bs-ride="carousel">
@@ -168,7 +168,7 @@
 
             <section class="empa divFlexPC">
                 <div>
-                    <h3 class="subTitulo marginA">Nuestras Empanadas</h3>
+                    <h3 class="subTitulo marginA marginAC">Nuestras Empanadas</h3>
                 </div>
                 
                 <div id="Empandas" class="carousel slide tamCuadro" data-bs-ride="carousel">
@@ -236,7 +236,7 @@
 
             <section class="promo">
 
-                <h3 class="subTitulo">Promociones</h3>
+                <h3 class="subTitulo marginAC">Promociones</h3>
                 <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
                 <div id="Promociones" class="carousel slide tamCuadro" data-bs-ride="carousel">
 
@@ -281,7 +281,7 @@
             </section>
                 
             <section class="mainMap divFlexPC">
-                <h3 class="subTitulo">¿Donde estamos?</h3>
+                <h3 class="subTitulo marginAC">¿Donde estamos?</h3>
                 <div class="tamMap footerMap cuadroMapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
@@ -289,9 +289,9 @@
         </section>
 
         <!--Para que el usuario le sea mas facil ver todos los productos, le dejo un link-->
-        <div class="sangriaAB divFlex">
+        <div class="sangriaAB divFlex divFlexC">
             <span class="estLetraLink">¿Queres ver todos nuestros productos? </span>
-            <span><a class="estLetra" href="pages/productos.html">hacé click aca</a></span>
+            <span><a class="estLetra estLetraEnlace" href="pages/productos.html">¡Quiero verlos!</a></span>
         </div>
 
     </main>
@@ -334,7 +334,7 @@
                 </div>
             </section>
             
-            <section class="navFooter">
+            <section class="navFooter hideNav">
                 <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
                 <h3 class="titFooter">¡Explorá nuestra pagina!</h3>
                 <nav>

@@ -13,6 +13,7 @@
         background-color: burlywood;
     }
     
+
     .footerMenu{
         display: none;
     }
@@ -32,7 +33,6 @@
     }
 
     .footerWp{
-        margin-top: 15px;
         @include Tamaños(60px, 40px )
     }
         
@@ -78,7 +78,6 @@
 
     .footerFirma{
         text-align: center;
-        padding: 20px;
     }
 
     .footerFlexCol{
@@ -103,7 +102,7 @@
         display: block;
     }
 
-    .footerFlex{
+    /*.footerFlex{
         display: grid;
         grid-template-areas: 
                             "wp social"

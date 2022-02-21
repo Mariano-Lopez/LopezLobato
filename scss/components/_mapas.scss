@@ -68,6 +68,38 @@ $Cuadro4-T:(
     background-color-M: rgb(204, 110, 56)
     );
 
-    /* CELULAR */
+/* CELULAR */
 
-    
+$Cuadro1-C: (
+    borde-P: 2px solid black,
+    position-P: relative,
+    width-P: 320px,
+    height-P: 380px,
+    background-color-P: beige,
+    border-radius-P: 2%
+    );
+
+$Cuadro2-C:(
+    borde-B: 2px solid black,
+    radioBorde-B: 2%,
+    position-B: relative,
+    width-B: 244px,
+    height-B: 318px,
+    background-color-B: rgb(214, 128, 79)
+);
+
+$Cuadro3-C:(
+    borde-I: 2px solid black,
+    radioBorde-I: 2%,
+    width-I: auto,
+    height-I: auto,
+    background-color-I: beige
+    );
+
+$Cuadro4-C:(
+    borde-M: 2px solid black,
+    radioBorde-M: 2%,
+    width-M: auto,
+    height-M: 250px,
+    background-color-M: rgb(204, 110, 56)
+    );    

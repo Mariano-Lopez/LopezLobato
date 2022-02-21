@@ -28,17 +28,38 @@
     </head>
 
 <body>
-    <header>
-
+    <header id="arriba">
         <!--Nombre del negocio y logo-->
         
-        <div class="divFlexlogo" id="arriba">
+        <div class="divFlexlogo">
             <span class="nombreNegocio animate__animated animate__fadeIn">Pizzeria Lobato</span>
             <a class="nav__logo" href="../index.html"><img src="../img/Logos/logo.jpg" alt="logo" class="img__Logo"></a>
         </div>
         
+        
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div>
+                <ul class="nav__listC">
+                    <!--Secciones de la pagina-->
+                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/contacto.html"> Contacto</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/productos.html"> Productos</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/tupedido.html">Tu pedido</a></li>
+                </ul>
+            </div>
+        </div>
+
+
         <!--Menu de navegacion-->
-        <nav>
+        <nav class="hideNav">
             <ul class="nav__list">
                 <!--Secciones de la pagina-->
                 <li class="nav__item"><a class="nav__link" href="../pages/contacto.html"> Contacto</a></li>
@@ -47,6 +68,7 @@
                 <li class="nav__item"><a class="nav__link" href="../pages/tupedido.html">Tu pedido</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -103,11 +125,11 @@
                     </div>
                     
                     
-                    <div class="boton">
+                    <div class="boton boton1">
                         <input type="submit" value="Enviar">
                     </div>
 
-                    <div class="borrar sangriaB">
+                    <div class="borrar sangriaB boton1">
                         <input type="reset" value="Vaciar campos">
                     </div>
 
@@ -163,7 +185,7 @@
                 </div>
             </section>
             
-            <section class="navFooter">
+            <section class="navFooter hideNav">
                 <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
                 <h3 class="titFooter">¡Explorá nuestra pagina!</h3>
                 <nav>
