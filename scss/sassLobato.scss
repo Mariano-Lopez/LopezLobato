@@ -3,6 +3,12 @@
 /* //////// CELULAR //////// */
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
+    
+    @import "components/_header";
+    @import "components/_mapas";
+    @import "components/_mixins";
+    @import "components/_footer";
+
     /* reset */
     *{
         margin: 0;
@@ -221,105 +227,105 @@
 
 
 
-        /* Estilos del Footer*/
+    /* Estilos del Footer
 
-        footer{
-            padding-top: 10px;
-            background-color: burlywood;
-        }
+    footer{
+        padding-top: 10px;
+        background-color: burlywood;
+    }
+    
         
-            
-        .footerLogo img{
-            height: 60px;
-            width: 60px;
+    .footerLogo img{
+        height: 60px;
+        width: 60px;
+
+    }
     
-        }
-        
-        .tamMap iframe{
-            width: 360px;
-            height: 200px;
-            }
-
-        .footerMap{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+    .tamMap iframe{
+        width: 360px;
+        height: 200px;
         }
 
-        .footerFlexLogo{
-            display: flex;
-            margin: 20px 0px;
-            flex-direction: row;
-            justify-content:space-evenly;
-        }    
-        .footerNav{
-            color: rgb(189, 24, 24);
-            text-decoration: none;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            display: block;
-        }
+    .footerMap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-        .footerListnav{
-            list-style: none;
-        }
+    .footerFlexLogo{
+        display: flex;
+        margin: 20px 0px;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }    
+    .footerNav{
+        color: rgb(189, 24, 24);
+        text-decoration: none;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        display: block;
+    }
+
+    .footerListnav{
+        list-style: none;
+    }
+
+    .footerLinea{
+        border-top: solid 2px rgb(23, 23, 122);
+    }
+
+    .footerFirma{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footerFlexCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titFooter{
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+    }
     
-        .footerLinea{
-            border-top: solid 2px rgb(23, 23, 122);
-        }
-    
-        .footerFirma{
-            text-align: center;
-            padding: 20px;
-        }
-    
-        .footerFlexCol{
-            display: flex;
-            flex-direction: column;
-        }
+    .gridNavfooter{
+        display: grid;
+        grid-template-areas: 
+                            "cont prod"
+                            "sobnos tuped"
+                            "ir ir";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
 
-        .titFooter{
-            text-align: center;
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 20px;
-        }
-        
-        .gridNavfooter{
-            display: grid;
-            grid-template-areas: 
-                                "cont prod"
-                                "sobnos tuped"
-                                "ir ir";
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto auto;
-            justify-content: center;
-        }
+    .contac{
+        justify-self: center;
+        grid-area: cont;
+    }
 
-        .contac{
-            justify-self: center;
-            grid-area: cont;
-        }
+    .prod{
+        justify-self: center;
+        grid-area: prod;
+    }
 
-        .prod{
-            justify-self: center;
-            grid-area: prod;
-        }
+    .sobnos{
+        justify-self: center;
+        grid-area: sobnos;
+    }
 
-        .sobnos{
-            justify-self: center;
-            grid-area: sobnos;
-        }
+    .tuped{
+        justify-self: center;
+        grid-area: tuped;
+    }
 
-        .tuped{
-            justify-self: center;
-            grid-area: tuped;
-        }
-
-        .irA{
-            justify-self: center;
-            grid-area: ir;
-        }
+    .irA{
+        justify-self: center;
+        grid-area: ir;
+    }
 
 
     /* Tamaño mapa del footer w 320 h 200*/
@@ -390,46 +396,42 @@
 
 @media screen and (max-width: 1199px) and (min-width: 600px) {
 
+    @import "../scss/components/_header";
+    @import "components/_mapas";
+    @import "components/_mixins";
+    @import "components/_footer";
+    @import "base/_variables";
+
     /* reset */
     *{
         margin: 0;
         padding: 0;
     }
 
-
     /* Titulo principal*/
-    h1{
+    .nombreNegocio{
         text-align: center;
         font-family: 'Satisfy', cursive;
-        font-size: 70px;
-        color: rgb(53, 53, 141);
+        font-size: 100px;
+        color: $color-titulo;
     }
 
     /* Subtitulo*/
-    h2{
+    h1{
         font-family: 'Satisfy', cursive;
         text-align: center;
         font-size: 60px;
-        color: rgb(22, 59, 10);
+        color: $color-h2;
         text-decoration: underline;
         text-decoration-color: black;
     }
-
-
+    
     /* Estilo de subtitulo */
     .subTitulo{
-        /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
-        /*Se me ocurrio esta forma*/
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-
         color: rgb(189, 24, 24);
         font-size: 40px;
         text-align: center;
         font-family: 'Satisfy', cursive;
-        margin-top: 25px;
-        margin-bottom: 25px;
         text-decoration-line: underline;
         text-decoration-color: rgb(23, 23, 122);
     }
@@ -438,15 +440,37 @@
 
     /*Espacio Arriba*/
     .sangriaA{
-        margin-top: 20px;
+        padding-top: 20px;
     }
+
     /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
     .sangriaAB{
-        margin-top: 15px;
-        margin-bottom: 15px;}
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 
     /*Espacio aBajo*/
     .sangriaB{
+        padding-bottom: 20px;
+    }
+
+    /*Espacio Arriba*/
+    .marginA{
+        margin-top: 20px;
+    }
+
+    .marginAT{
+        margin-top: 20px;
+    }
+
+    /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
+    .marginAB{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /*Espacio aBajo*/
+    .marginB{
         margin-bottom: 20px;
     }
 
@@ -464,6 +488,13 @@
         align-items: center;
     }
 
+    .divFlexProd{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap: 20px;
+    }
+
     .divFlex{
         display: flex;
         flex-direction: row;
@@ -472,52 +503,10 @@
 
     .divFlexT{
         display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
+
     }
-
-
-    /* Menu */ 
-
-    .nav__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        padding: 2rem;
-        font-size: 5rem;
-        font-family: 'Satisfy', cursive;
-        color: rgb(23, 23, 122);
-        
-    }
-
-    .nav__list{
-
-        display:  flex;
-        justify-content: center;
-        align-items: center;
-
-        /*Quiero que aparezcan las linas por abajo y por arriba no mas*/
-        border: solid 2px rgb(23, 23, 122);
-        border-left: 0px;
-        border-right: 0px;
-    }
-
-    .nav__item{
-        padding: 25px;
-        font-size: 30px;
-        display: block;
-        
-    }
-
-    .nav__link{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Satisfy', cursive;
-        font-weight: bold;
-    }
-
-
-    
 
     .estLetra{
         margin: 0px 5px;
@@ -525,17 +514,13 @@
         font-family: 'Nunito Sans', sans-serif;
     }
 
-    .divFlexT{
+    .divFlexLocal{
         display: flex;
         justify-content: center;
     }
 
     .imgWP{
-        height: 60px;
-        width: 100px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
+        @include Tamaños(50px, 30px);
     }
 
     .img__Logo{
@@ -543,13 +528,102 @@
         width: 200px;
     }
 
-    /* Tamaño estandar de imagen (por ahora) */
     /* Especifique la etiqueta "img" porque la tengo que poner solamente en el div contenedor yno en cada etiqueta */
     .imgTamaño img {
-        width: 225px;
-        height: 184px;
+        @include Tamaños(346px, 220px)
     }
 
+    .imgTamaño2 img {
+        @include Tamaños(240px, 268px)
+    }
+
+
+    .imgLocal{
+        @include Tamaños(550px, 600px);
+        border: 2px solid black;
+        margin-bottom: 20px;
+        border-radius: 2%;
+    }
+
+    /* Uso del Mapa */
+    .cuadroPizza{
+        border: map-get($map:$Cuadro1-T, $key:borde-P );
+        position: map-get($map:$Cuadro1-T, $key:position-P );
+        width: map-get($map:$Cuadro1-T, $key:width-P );
+        height: map-get($map:$Cuadro1-T, $key:height-P );
+        background-color: map-get($map:$Cuadro1-T, $key:background-color-P );
+        border-radius: map-get($map:$Cuadro1-T, $key: border-radius-P );
+    }
+
+    .cuadroBebida{
+        border:map-get($map: $Cuadro2-T, $key: borde-B) ;
+        border-radius:map-get($map: $Cuadro2-T, $key: radioBorde-B) ;
+        position:map-get($map: $Cuadro2-T, $key: position-B) ;
+        width:map-get($map: $Cuadro2-T, $key: width-B) ;
+        height:map-get($map: $Cuadro2-T, $key: height-B) ;
+        background-color:map-get($map: $Cuadro2-T, $key:background-color-B );
+        
+    }
+
+    .cuadroInfo{
+        border:map-get($map: $Cuadro3-T, $key: borde-I) ;
+        border-radius:map-get($map: $Cuadro3-T, $key: radioBorde-I) ;
+        width:map-get($map: $Cuadro3-T, $key: width-I) ;
+        height:map-get($map: $Cuadro3-T, $key: height-I) ;
+        background-color:map-get($map: $Cuadro3-T, $key:background-color-I);
+    }
+
+    .cuadroMapa{
+        border:map-get($map: $Cuadro4-T, $key: borde-M) ;
+        border-radius:map-get($map: $Cuadro4-T, $key: radioBorde-M) ;
+        width:map-get($map: $Cuadro4-T, $key: width-M) ;
+        height:map-get($map: $Cuadro4-T, $key: height-M) ;
+        background-color:map-get($map: $Cuadro4-T, $key:background-color-M);
+    }
+
+    .footerMap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;}
+
+    .gridMain{
+        display: grid;
+        grid-template-areas: "piz emp"
+                            "prom map";
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .pizza{
+        grid-area: piz;
+        justify-self: center;
+    }
+
+    .empa{
+        grid-area: emp;
+        justify-self: center;
+    }
+
+    .promo{
+        grid-area: prom;
+        justify-self: center;
+    }
+
+    .mainMap{
+        grid-area: map;
+        justify-self: center;
+    }
+
+    .tamMap iframe{
+        @include Tamaños(300px, 220px);
+        }
+    
+
+    .tamCuadro{
+        @include Tamaños(350px, 315px);
+    }
 
     /* Estilos del formulario */
 
@@ -620,125 +694,6 @@
         text-align: center;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Estilos del Footer*/
-
-    footer{
-        padding-top: 10px;
-        background-color: burlywood;
-    }
-    
-        
-    .footerLogo img{
-        height: 60px;
-        width: 60px;
-
-    }
-    
-    .tamMap iframe{
-        width: 768px;
-        height: 400px;
-        }
-
-    .footerMap{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footerFlexLogo{
-        display: flex;
-        margin: 20px 0px;
-        flex-direction: row;
-        justify-content:space-evenly;
-    }    
-    .footerNav{
-        color: rgb(189, 24, 24);
-        text-decoration: none;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        display: block;
-    }
-
-    .footerListnav{
-        list-style: none;
-    }
-
-    .footerLinea{
-        border-top: solid 2px rgb(23, 23, 122);
-    }
-
-    .footerFirma{
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footerFlexCol{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .titFooter{
-        text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 30px;
-    }
-    
-    .gridNavfooter{
-        display: grid;
-        grid-template-areas: 
-                            "cont prod"
-                            "sobnos tuped"
-                            "ir ir";
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
-        justify-content: center;
-    }
-
-    .contac{
-        justify-self: center;
-        grid-area: cont;
-    }
-
-    .prod{
-        justify-self: center;
-        grid-area: prod;
-    }
-
-    .sobnos{
-        justify-self: center;
-        grid-area: sobnos;
-    }
-
-    .tuped{
-        justify-self: center;
-        grid-area: tuped;
-    }
-
-    .irA{
-        justify-self: center;
-        grid-area: ir;
-    }
-
     /* ----- Contacto ----- */
 
     .secTitulo{
@@ -746,7 +701,7 @@
         /*Se me ocurrio esta forma*/
         color: rgb(92, 18, 126);
         font-size: 40px;
-        margin-left: 10px;
+        text-align: center;
         font-family: 'Satisfy', cursive;
         text-decoration-line: underline;
         text-decoration-color: rgb(23, 23, 122);
@@ -759,16 +714,58 @@
         padding: 5px;
     }
 
+    /******** Estilos CONTACTO ********/
+
+    .bordeForm{
+        @include Tamaños(700px, 380px);
+        border: 2px solid black;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+    }
 
     /* ----- Productos ----- */
 
-    .imgTamaño2 img {
-        width: 240px;
-        height: 268px;
+    .precio{
+        border-left: 2px solid black;
+        font-size: 26px;
+        font-family: 'Nunito Sans', sans-serif;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-bottom: 8px;
     }
 
+    .estTit{
+        @extend %TitulodeCuadro-T;
+        text-align: center;
+    }
+
+    .estTit2{
+        @extend %TitulodeCuadro-T
+        
+    }
+
+    .estDesc{
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .estImg{
+        border: 2px solid black ;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .estImg2{
+        border-top: 2px solid black ;
+        border-radius: 2%;
+    }
+    
+
     .estLink{
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Nunito Sans', sans-serif;
         text-align: center;
         color: rgb(92, 18, 126);
@@ -778,6 +775,194 @@
     .linkPedido{
         padding-left: 5px;
     }
+
+    /* Estilos del formulario */
+
+    .gridForm{
+        display: grid;
+
+        grid-template-areas: 
+                            "nom apell tel"
+                            "email edad direc"
+                            "may may may"
+                            "comen comen comen"
+                            "bot bot reset";
+        gap: 10px;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .nombre{
+        grid-area: nom;
+    }
+
+    .apellido{
+        grid-area: apell;
+    }
+
+    .telefono{
+        grid-area: tel;
+    }
+
+    .email{
+        grid-area: email;
+    }
+
+    .edad{
+        grid-area: edad;
+    }
+
+    .mayor{
+        justify-self: center;
+        grid-area: may;
+    }
+
+    .direccion{
+        grid-area: direc;
+    }
+    
+    .comentario{
+        grid-area: comen;
+    }
+
+    .boton{
+        width: 1fr;
+        justify-self: center;
+        grid-area: bot;
+    }
+
+    .borrar{
+        grid-area: reset;
+    }
+
+    .flexForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centComent{
+        text-align: center;
+    }
+
+    .estForm{
+        font-size: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+    }
+
+    .estEdad{
+        font-size: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+
+    .footerMap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;}
+
+    
+
+    /******** Estilos CONTACTO ********/
+
+    .bordeForm{
+        @include Tamaños(700px, 380px);
+        border: 2px solid black;
+        border-radius: 5%;
+    }
+
+
+    /******** Estilos PEDIDO ********/
+
+
+    .gridPedido{
+        display: grid;
+        grid-template-areas: "pi em"
+                            "beb cer"
+                            "agr pag"
+                            "acl acl";
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        gap: 20px;
+        
+    }
+
+    .PedPiz{
+        grid-area: pi;
+    }
+
+    .PedEmp{
+        grid-area: em;
+    }
+
+    .PedBeb{
+        grid-area: beb;
+    }
+
+    .PedCer{
+        grid-area: cer;
+    }
+
+    .PedAgr{
+        grid-area: agr;
+        justify-self: center;
+    }
+
+    .PedPag{
+        grid-area: pag;
+        justify-self: center;
+    }
+
+    .PedAcl{
+        grid-area: acl;
+    }
+
+    .PedCuadro{
+        border: 2px solid black;
+        border-radius: 5%;
+        
+        width: 550px;
+        height: 350px;
+    }
+
+    .gridDatos{
+        display: grid;
+        grid-template-areas: "nom email"
+                            "dir tel";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        gap: 15px;
+        }
+
+    .datNom{
+        grid-area: nom;
+    }
+
+    .datEmail{
+        grid-area: email;
+    }
+
+    .datDir{
+        grid-area: dir;
+    }
+
+    .datTel{
+        grid-area: tel;
+    }
+
+    .pedDatos{
+        border: 2px solid black;
+        border-radius: 5%;
+        @include Tamaños(550px, 250px);
+    }
+
+
 
 }
 
@@ -799,18 +984,11 @@
     @import "components/_extends";
     @import "components/_mapas";
     @import "components/_mixins";
-    @import "components/footer";
+    @import "components/_footer";
+    @import "base/variables";
 
     
-    // Uso de variable //
-
-    $color-titulo: rgb(53, 53, 141);
-
-    $color-h2:rgb(22, 59, 10);
-
-    $color-titSeccion: rgb(92, 18, 126);
-
-    $color-subTitulo: rgb(189, 24, 24);
+    
     /* Hago una clase para hacer un espacio entre una secicon y otra*/
 
     .reset{
@@ -838,6 +1016,11 @@
     .marginA{
         margin-top: 25px;
     }
+
+    .marginAPC{
+        margin-top: 25px;
+    }
+
 
     /*Espacio Arriba y aBajo para no poner 2 clases en una misma etiqueta*/
     .marginAB{
@@ -872,9 +1055,6 @@
 
     .imgWP{
         @include Tamaños(50px, 30px);
-        /*position: fixed;
-        bottom: 0;
-        right: 0;*/
     }
 
     /*Lo arregle con flex*/
@@ -1031,13 +1211,19 @@
         text-align: center;
     }
 
+    .divFlexFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .divFlex{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .divFlexT{
+    .divFlexProd{
         display: flex;
         flex-wrap:wrap;
         justify-content:space-around;
@@ -1213,7 +1399,6 @@
 
     .bordeForm{
         @include Tamaños(700px, 380px);
-        margin-left: 600px;
         border: 2px solid black;
         border-radius: 5%;
     }

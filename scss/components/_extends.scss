@@ -1,6 +1,33 @@
-%TitulodeCuadro{
-    font-family:'Satisfy', cursive;
-    font-size: 3rem;
-    color: rgb(126, 27, 27);
-    text-decoration: underline black;
+
+
+
+
+
+
+
+
+
+/* //////// TABLET //////// */
+
+@media screen and (max-width: 1199px) and (min-width: 600px) {
+    %TitulodeCuadro-T{
+        font-family:'Satisfy', cursive;
+        font-size: 2rem;
+        color: rgb(126, 27, 27);
+        text-decoration: underline black;
+    }
+}
+
+
+
+
+/* //////// COMPUTADORA //////// */
+
+@media only screen and (min-width: 1200px) {
+    %TitulodeCuadro{
+        font-family:'Satisfy', cursive;
+        font-size: 3rem;
+        color: rgb(126, 27, 27);
+        text-decoration: underline black;
+    }
 }

@@ -1,9 +1,348 @@
-// Estilos del footer //
+@import "components/_header";
+@import "components/_extends";
+@import "components/_mapas";
+@import "components/_mixins";
+
+/* --------------- Mediaqueries ---------------*/
+
+/* //////// CELULAR //////// */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    footer{
+        padding-top: 10px;
+        background-color: burlywood;
+    }
+    
+    .footerMenu{
+        display: none;
+    }
+
+    .icono{
+        @include Tamaños (30px, 30px);
+        margin-right: 5px;
+    }
+
+    .footerLogo{
+        @include Tamaños(40px, 40px)
+
+    }
+
+    .footerFB{
+        @include Tamaños(50px, 45px)
+    }
+
+    .footerWp{
+        margin-top: 15px;
+        @include Tamaños(60px, 40px )
+    }
+        
+    .footerLogo img{
+        height: 60px;
+        width: 60px;
+
+    }
+    
+    .tamMap iframe{
+        width: 768px;
+        height: 400px;
+        }
+
+    .footerMap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footerFlexLogo{
+        display: flex;
+        margin: 20px 0px;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }    
+    .footerNav{
+        color:rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        display: block;
+    }
+
+    .footerListnav{
+        list-style: none;
+    }
+
+    .footerLinea{
+        border-top: solid 2px rgb(23, 23, 122);
+    }
+
+    .footerFirma{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footerFlexCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titFooter{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 30px;
+    }
+    
+    .footerA{
+        color: rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: black;
+        display: block;
+    }
+
+    .footerFlex{
+        display: grid;
+        grid-template-areas: 
+                            "wp social"
+                            "pag pag";
+        grid-template-columns: auto;
+        grid-auto-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .iframe{
+        justify-self: center;
+        grid-area: wp;
+    }
+
+    .red{
+        justify-self: center;
+        grid-area: social;
+    }
+
+    .navFooter{
+        justify-self: center;
+        grid-area: pag;
+    }
 
 
-/********************************************************************/
 
-    /* Estilos del Footer*/
+    /*.gridNavfooter{
+        display: grid;
+        grid-template-areas: 
+                            "cont prod sobnos"
+                            "tuped vacio ir";
+        grid-template-columns: auto;
+        grid-auto-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .contac{
+        justify-self: center;
+        grid-area: cont;
+    }
+
+    .prod{
+        justify-self: center;
+        grid-area: prod;
+    }
+
+    .sobnos{
+        justify-self: center;
+        grid-area: sobnos;
+    }
+
+    .tuped{
+        justify-self: center;
+        grid-area: tuped;
+    }
+
+    .irA{
+        justify-self: center;
+        grid-area: ir;
+    }
+
+    .prueba{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+    }*/
+}
+
+/* //////// TABLET //////// */
+
+@media screen and (max-width: 1199px) and (min-width: 600px) {
+
+    footer{
+        padding-top: 10px;
+        background-color: burlywood;
+    }
+    
+    .footerMenu{
+        display: none;
+    }
+
+    .icono{
+        @include Tamaños (30px, 30px);
+        margin-right: 5px;
+    }
+
+    .footerLogo{
+        @include Tamaños(40px, 40px)
+
+    }
+
+    .footerFB{
+        @include Tamaños(50px, 45px)
+    }
+
+    .footerWp{
+        margin-top: 15px;
+        @include Tamaños(60px, 40px )
+    }
+        
+    .footerLogo img{
+        height: 60px;
+        width: 60px;
+
+    }
+    
+    .tamMap iframe{
+        width: 768px;
+        height: 400px;
+        }
+
+    .footerMap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footerFlexLogo{
+        display: flex;
+        margin: 20px 0px;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }    
+    .footerNav{
+        color:rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        display: block;
+    }
+
+    .footerListnav{
+        list-style: none;
+    }
+
+    .footerLinea{
+        border-top: solid 2px rgb(23, 23, 122);
+    }
+
+    .footerFirma{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footerFlexCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titFooter{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 30px;
+    }
+    
+    .footerA{
+        color: rgb(23, 23, 122);
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: black;
+        display: block;
+    }
+
+    .footerFlex{
+        display: grid;
+        grid-template-areas: 
+                            "wp social"
+                            "pag pag";
+        grid-template-columns: auto;
+        grid-auto-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .iframe{
+        justify-self: center;
+        grid-area: wp;
+    }
+
+    .red{
+        justify-self: center;
+        grid-area: social;
+    }
+
+    .navFooter{
+        justify-self: center;
+        grid-area: pag;
+    }
+
+
+
+    .gridNavfooter{
+        display: grid;
+        grid-template-areas: 
+                            "cont prod sobnos"
+                            "tuped vacio ir";
+        grid-template-columns: auto;
+        grid-auto-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .contac{
+        justify-self: center;
+        grid-area: cont;
+    }
+
+    .prod{
+        justify-self: center;
+        grid-area: prod;
+    }
+
+    .sobnos{
+        justify-self: center;
+        grid-area: sobnos;
+    }
+
+    .tuped{
+        justify-self: center;
+        grid-area: tuped;
+    }
+
+    .irA{
+        justify-self: center;
+        grid-area: ir;
+    }
+
+    .prueba{
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+    }
+
+
+}
+
+/* //////// COMPUTADORA //////// */
+
+@media only screen and (min-width: 1200px) {
 
     footer{
         padding-top: 30px;
@@ -165,3 +504,4 @@
     .fondo3{
         background-color: blueviolet;
     }
+}
