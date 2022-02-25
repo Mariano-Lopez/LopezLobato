@@ -1,0 +1,84 @@
+/* --------------- Mediaqueries ---------------*/
+
+@import "components/_mapas.scss";
+/* //////// CELULAR //////// */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        background: rgb(127,143,246);
+        background: radial-gradient(circle, rgba(127,143,246,1) 0%, rgba(247,247,247,1) 100%);
+        h1{
+            margin-top: 20px;
+            font-family: 'Satisfy', cursive;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(22, 59, 10);
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+        /* Si le pongo el nombre de la clase no aplica los atributos*/
+        section{
+            
+            .cuadroInfo{
+                border:map-get($map: $Cuadro3-C, $key: borde-I) ;
+                border-radius:map-get($map: $Cuadro3-C, $key: radioBorde-I) ;
+                width:map-get($map: $Cuadro3-C, $key: width-I) ;
+                height:map-get($map: $Cuadro3-C, $key: height-I) ;
+                background-color:map-get($map: $Cuadro3-C, $key:background-color-I);
+                div{
+                    .divFlexLocal{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-top: 10px ;
+                        .imgLocal{
+                            @include Tamaños(290px, 290px);
+                            border: 2px solid black;
+                            border-radius: 2%;
+                        }
+                    }
+                    .sangriaA{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        section{
+            .divFlexC{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                div{
+                    h3{
+                        /* Estilo de subtitulo */
+                        .subTitulo{
+                            /*Quiero que el titulo este ala izquierda pero no en el inicio del margin*/
+                            /*Se me ocurrio esta forma*/
+                            color: rgb(189, 24, 24);
+                            font-size: 30px;
+                            text-align: center;
+                            font-family: 'Satisfy', cursive;
+                            text-decoration-line: underline;
+                            text-decoration-color: rgb(23, 23, 122);
+                        }
+                    }
+                }
+            }
+        }
+    }      
+}
+
+
+
+/* //////// TABLET //////// */
+
+@media screen and (max-width: 1199px) and (min-width: 600px) {}
+
+
+/* //////// COMPUTADORA //////// */
+
+@media only screen and (min-width: 1200px) {}

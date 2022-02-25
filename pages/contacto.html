@@ -29,43 +29,41 @@
 
 <body>
     <header id="arriba">
+
         <!--Nombre del negocio y logo-->
         
         <div class="divFlexlogo">
             <span class="nombreNegocio animate__animated animate__fadeIn">Pizzeria Lobato</span>
-            <a class="nav__logo" href="../index.html"><img src="../img/Logos/logo.jpg" alt="logo" class="img__Logo"></a>
+            <a class="navLogo" href="../index.html"><img src="../img/Logos/logo.jpg" alt="logo" class="imgLogo"></a>
         </div>
         
         
-        <nav class="navbar navbar-dark bg-primary">
+        <nav class="navbar navbar-dark colorHam hideNavT hideNavPC">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            
         </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div>
-                <ul class="nav__listC">
-                    <!--Secciones de la pagina-->
-                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/contacto.html"> Contacto</a></li>
-                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/productos.html"> Productos</a></li>
-                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
-                    <li class="nav__itemC"><a class="nav__linkC" href="../pages/tupedido.html">Tu pedido</a></li>
-                </ul>
-            </div>
-        </div>
 
+        <div class="collapse hideNavT hideNavPC" id="navbarToggleExternalContent">
+            <ul class="navListC">
+                <!--Secciones de la pagina-->
+                <li class="navItemC"><a class="navLinkC" href="../pages/contacto.html"> Contacto</a></li>
+                <li class="navItemC"><a class="navLinkC" href="../pages/productos.html"> Productos</a></li>
+                <li class="navItemC"><a class="navLinkC" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                <li class="navItemC"><a class="navLinkC" href="../pages/tupedido.html">Tu pedido</a></li>
+            </ul>
+        </div>
 
         <!--Menu de navegacion-->
         <nav class="hideNav">
-            <ul class="nav__list">
+            <ul class="navList">
                 <!--Secciones de la pagina-->
-                <li class="nav__item"><a class="nav__link" href="../pages/contacto.html"> Contacto</a></li>
-                <li class="nav__item"><a class="nav__link" href="../pages/productos.html"> Productos</a></li>
-                <li class="nav__item"><a class="nav__link" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
-                <li class="nav__item"><a class="nav__link" href="../pages/tupedido.html">Tu pedido</a></li>
+                <li class="navItem"><a class="navLink" href="../pages/contacto.html"> Contacto</a></li>
+                <li class="navItem"><a class="navLink" href="../pages/productos.html"> Productos</a></li>
+                <li class="navItem"><a class="navLink" href="../pages/sobrenosotros.html"> Sobre Nosotros</a></li>
+                <li class="navItem"><a class="navLink" href="../pages/tupedido.html">Tu pedido</a></li>
             </ul>
         </nav>
 
@@ -78,7 +76,7 @@
             <p class="estParrafo">Si queres saber nuestras proximas ofertas, novedades o simplemente queres dejar un comentario, rellena los campos de abajo y escribinos.</p>
         </div>
 
-        <h3 class="secTitulo sangriaA animate__animated animate__flash">¡Dejanos tus datos!</h2>
+        <h2 class="secTitulo sangriaA animate__animated animate__flash">¡Dejanos tus datos!</h2>
 
         <div class="sangriaB divFlex">
 
@@ -149,19 +147,19 @@
 
     <!-- Pie de pagina-->
     <footer class="footerLinea">
-        <section class="footerFlex">
+        <div class="footerFlex">
             <!--Mapa del local-->
-            <section class="iframe">
-                <h3 class="titFooter">¡Contactate con nosotros!</h3>
+            <div class="iframe">
+                <p class="titFooter">¡Contactate con nosotros!</p>
                 <div class="divFlex">
                     <a href=""><img src="../img/Logos/Logo-wp.png" alt="Logo Whatsap" class="footerWp"></a>
                 </div>
                 
                 
-            </section>
+            </div>
             
-            <section class="red">
-                <h3 class="titFooter">Seguinos en nuestras Redes</h3>
+            <div class="red">
+                <p class="titFooter">Seguinos en nuestras Redes</p>
                 <div class="footerFlexLogo">
                     <!--Redes Sociales-->
                     <div class="footerFlexCol">
@@ -183,11 +181,11 @@
                     </div>
                     
                 </div>
-            </section>
+            </div>
             
-            <section class="navFooter hideNav">
+            <div class="navFooter hideNav hideNavT">
                 <!--Coloco nuevamente el menu para facilitarle la navegacion al usuario-->
-                <h3 class="titFooter">¡Explorá nuestra pagina!</h3>
+                <p class="titFooter">¡Explorá nuestra pagina!</p>
                 <nav>
                     <ul class="footerListnav gridNavfooter divFlexFooter">
                         <!--Secciones de la pagina-->
@@ -221,9 +219,10 @@
                     </ul>
                 </nav>
                 <!--Ir al principio de la pagina-->
-                
-            </section>
-        </section>
+            </div>
+        </div>
+        
+        
 
         <!--"Firma"-->
         <div class="footerFirma">
