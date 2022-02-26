@@ -75,7 +75,7 @@
         <section class="divFlex">
             <div class="cuadroInfo">
                 <!--Imagen del local con la informacion del mismo-->
-                <div class="divFlex divFlexT">
+                <div class="divFlexC divFlexT divFlex">
                     
                     <div class="divFlexLocal">
                         <img src="img/Local.png" alt="local" class="imgLocal">
@@ -84,7 +84,7 @@
                     <div class="sangriaA">
 
                         <h2>Informacion de nuestro local</h2>
-                        <ul>
+                        <ul class="estLetraInfo">
                             <li>Abierto de Martes a Domingo de 13 a 00 (feriados de 13 a 23).</li>
                             <li>Estamos en Av. Emilio Castro 669.</li>
                             <li>Te dejamos nuestro Whatsap por cualquier consulta o pedido. <a href=""><img src="img/Logos/Logo-wp.png" alt="" class="imgWP"></a></li>
@@ -95,7 +95,7 @@
                             <li>¿Querés hacer un pedido?, hacé <a href="pages/tupedido.html">click aca</a></li>
                             
                         </ul>
-                        <p>Inaugurado en 1973 por los 3 hermanos Lobato, Fernando, Rolando y Sebastián. Decidieron compartir sus mejores recetas de pizzas y empanadas primero a los vecinos, al barrio y finalmente, después de mucho tiempo, a toda Capital.</p>
+                        <p class="estResumen">Inaugurado en 1973 por los 3 hermanos Lobato, Fernando, Rolando y Sebastián. Decidieron compartir sus mejores recetas de pizzas y empanadas primero a los vecinos, al barrio y finalmente, después de mucho tiempo, a toda Capital.</p>
                     </div>
                 </div>
             </div>
@@ -103,13 +103,12 @@
             
 
         <section class="gridMain">
-            
-            <section class="pizza divFlexPC  divFlexC">
-                <div>
-                    <h3 class="subTitulo marginA marginAC">Nuestras Pizzas</h3>
-                </div>
-                
-                <div id="carouselExampleIndicators" class="carousel slide tamCuadro divFlex" data-bs-ride="carousel">
+            <!-- divFlexPC  divFlexC -->
+            <section class="pizza">
+
+                <h3 class="marginA marginAC">Nuestras Pizzas</h3>
+
+                <div id="carouselExampleIndicators" class="carousel slide tamCuadro" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -164,12 +163,11 @@
 
             </section>
 
-            <section class="empa divFlexPC">
-                <div>
-                    <h3 class="subTitulo marginA marginAC">Nuestras Empanadas</h3>
-                </div>
+            <section class="empa">
+                <!-- Cuando pongo "Nuestras empanadas" el cuadro toma el hegith del titulo y no se centra, probe con flex y no funciono -->
+                <h3 class="marginA marginAC">Empanadas</h3>
                 
-                <div id="Empandas" class="carousel slide tamCuadro" data-bs-ride="carousel">
+                <div id="Empandas" class="carousel slide tamCuadro divFlex" data-bs-ride="carousel">
                     <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#Empandas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -234,7 +232,7 @@
 
             <section class="promo">
 
-                <h3 class="subTitulo marginAC">Promociones</h3>
+                <h3 class="marginAC">Promociones</h3>
                 <!--Itere el codigo agregando un item mas y cambiando colores y el tamaño-->
                 <div id="Promociones" class="carousel slide tamCuadro" data-bs-ride="carousel">
 
@@ -279,8 +277,8 @@
             </section>
                 
             <section class="mainMap divFlexPC">
-                <h3 class="subTitulo marginAC">¿Donde estamos?</h3>
-                <div class="tamMap footerMap cuadroMapa">
+                <h3 class="marginAC">¿Donde estamos?</h3>
+                <div class="tamMap divMap cuadroMapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.13760716418!2d-58.51649338423558!3d-34.65122756752156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses!2sar!4v1640192018252!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </section>
@@ -315,18 +313,24 @@
                         <div class="divFlex">
                             <a href=""><img src="./img/Logos/Logo-IG.png" alt="Instagram" class="footerLogo"></a>
                         </div>
-                        <span class="prueba">Instagram</span>
+                        <span class="estRedes">Instagram</span>
                     </div>
                     
                 
                     <div class="footerFlexCol">
-                        <a href=""><img src="./img/Logos/Logo-FB.png" alt="Facebook" class="footerFB"></a>
-                        <span class="prueba">Facebook</span>
+                        <div class="divFlex">
+                            <a href=""><img src="./img/Logos/Logo-FB.png" alt="Facebook" class="footerFB"></a>
+                        </div>
+                        
+                        <span class="estRedes">Facebook</span>
                     </div>
                     
                     <div class="footerFlexCol">
-                        <a href=""><img src="./img/Logos/Logo-Tw.png" alt="Twitter" class="footerLogo"></a>
-                        <span class="prueba">Twitter</span>
+                        <div class="divFlex">
+                            <a href=""><img src="./img/Logos/Logo-Tw.png" alt="Twitter" class="footerLogo"></a>
+                        </div>
+                        
+                        <span class="estRedes">Twitter</span>
                     </div>
                     
                 </div>

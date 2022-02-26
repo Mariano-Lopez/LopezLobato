@@ -2,35 +2,49 @@
 
 /* //////// CELULAR //////// */
 
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 767px) and (min-width: 320px) {
     %TitulodeCuadro-C{
         font-family:'Satisfy', cursive;
         font-size: 2rem;
-        color: rgb(126, 27, 27);
+        color: $color-variedad;
         text-decoration: underline black;
     }
+    %EstiloLink-C{
+        font-size: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        color: $color-link;
+    }
+
+    %EstiloInfo-C{
+        font-size: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+    }
+
 }
-
-
-
-
-
-
-
 
 /* //////// TABLET //////// */
 
-@media screen and (max-width: 1199px) and (min-width: 600px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
     %TitulodeCuadro-T{
         font-family:'Satisfy', cursive;
         font-size: 2rem;
-        color: rgb(126, 27, 27);
+        color: $color-variedad;
         text-decoration: underline black;
     }
+    %EstiloLink-T{
+        font-size: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        color: $color-link;
+    }
+    %EstiloInfo-T{
+        font-size: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+    }
 }
-
-
-
 
 /* //////// COMPUTADORA //////// */
 
@@ -38,7 +52,19 @@
     %TitulodeCuadro{
         font-family:'Satisfy', cursive;
         font-size: 3rem;
-        color: rgb(126, 27, 27);
+        color:$color-variedad;
         text-decoration: underline black;
+    }
+
+    %EstiloLink{
+        font-size: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        color: $color-link;
+    }
+    %EstiloInfo{
+        font-size: 22px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
     }
 }

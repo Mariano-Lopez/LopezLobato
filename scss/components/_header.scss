@@ -3,7 +3,7 @@
 @import "base/_variables.scss";
 /* //////// CELULAR //////// */
 
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 599px) and (min-width: 320px) {
 
     header{
         .divFlexlogo{
@@ -13,8 +13,8 @@
             .nombreNegocio{
                 text-align: center;
                 font-family: 'Satisfy', cursive;
-                font-size: 50px;
-                color: rgb(53, 53, 141);}
+                font-size: 80px;
+                color: $color-nombre;}
                 text-decoration: underline rgb(189, 24, 24);
             .navLogo{
                 display: flex;
@@ -26,7 +26,7 @@
                 font-family: 'Satisfy', cursive;
                 color: rgb(23, 23, 122);
                 .imgLogo{
-                    @include Tamaños(200px, 150px);}
+                    @include Tamaños(250px, 200px);}
                 }
         /* No funciona este nesting
         nav{
@@ -74,16 +74,13 @@
 
     header{
         .divFlexlogo{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
+            
             /* Titulo principal*/
             .nombreNegocio{
                 text-align: center;
                 font-family: 'Satisfy', cursive;
                 font-size: 100px;
-                color: $color-titulo;
+                color: $color-nombre;
                 text-decoration: underline rgb(189, 24, 24);
                 }
             .navLogo{
@@ -102,6 +99,8 @@
         }
         nav{
             .navList{
+                margin: 0px;
+                padding: 0px;
                 display:  flex;
                 justify-content: center;
                 align-items: center;
@@ -144,7 +143,7 @@
                 text-align: center;
                 font-family: 'Satisfy', cursive;
                 font-size: 100px;
-                color: $color-titulo;
+                color: $color-nombre;
                 text-decoration: underline rgb(189, 24, 24);
             }
             .navLogo{
@@ -163,6 +162,8 @@
         }
         nav{
             .navList{
+                margin: 0px;
+                padding: 0px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
