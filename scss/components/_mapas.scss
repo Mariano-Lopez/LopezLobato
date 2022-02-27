@@ -33,6 +33,16 @@ $Cuadro4:(
     background-color-M: rgb(204, 110, 56)
     );
 
+$Cuadro5:(
+    borde-H: 2px solid black,
+    position-H: relative,
+    width-H: 1000px,
+    height-H: auto,
+    background-color-H: beige,
+    border-radius-H: 2%
+    );
+
+
 /* TABLET */
 $Cuadro1-T: (
     borde-P: 2px solid black,
